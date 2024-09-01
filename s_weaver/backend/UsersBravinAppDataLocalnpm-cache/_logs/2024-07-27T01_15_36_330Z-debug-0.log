@@ -1,0 +1,22 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.7.0
+2 info using node@v20.15.0
+3 silly config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config:load:file:C:\Users\Bravin\.npmrc
+5 silly config:load:file:C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\etc\npmrc
+6 verbose title npm install npm@10.8.2
+7 verbose argv "install" "--global" "npm@10.8.2"
+8 verbose logfile logs-max:10 dir:C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataLocalnpm-cache\_logs\2024-07-27T01_15_36_330Z-
+9 verbose logfile C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataLocalnpm-cache\_logs\2024-07-27T01_15_36_330Z-debug-0.log
+10 silly logfile done cleaning log files
+11 http fetch GET 200 https://registry.npmjs.org/npm 4780ms (cache miss)
+12 silly idealTree buildDeps
+13 silly fetch manifest npm@10.8.2
+14 http fetch GET 200 https://registry.npmjs.org/npm 9640ms (cache miss)
+15 silly placeDep ROOT npm@10.8.2 OK for:  want: 10.8.2
+16 silly reify moves {}
+17 silly tarball no local data for npm@https://registry.npmjs.org/npm/-/npm-10.8.2.tgz. Extracting by manifest.
+18 http fetch GET 200 https://registry.npmjs.org/npm/-/npm-10.8.2.tgz 13701ms (cache miss)
+19 silly ADD node_modules/npm
+20 verbose exit 0
+21 info ok

@@ -1,0 +1,52 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v20.15.0
+3 silly config load:file:C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Bravin\A_stories\s_weaver\.npmrc
+5 silly config load:file:C:\Users\Bravin\.npmrc
+6 silly config load:file:C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\etc\npmrc
+7 verbose title npm exec kill-port 4000
+8 verbose argv "exec" "--" "kill-port" "4000"
+9 verbose logfile logs-max:10 dir:C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataLocalnpm-cache\_logs\2024-08-12T19_43_01_283Z-
+10 verbose logfile C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataLocalnpm-cache\_logs\2024-08-12T19_43_01_283Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 http fetch GET 200 https://registry.npmjs.org/kill-port 2707ms (cache miss)
+14 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+15 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+16 silly idealTree buildDeps
+17 silly fetch manifest kill-port@2.0.1
+18 silly packumentCache full:https://registry.npmjs.org/kill-port cache-miss
+19 http fetch GET 200 https://registry.npmjs.org/kill-port 470ms (cache miss)
+20 silly packumentCache full:https://registry.npmjs.org/kill-port set size:undefined disposed:false
+21 silly placeDep ROOT kill-port@2.0.1 OK for:  want: 2.0.1
+22 silly fetch manifest get-them-args@1.3.2
+23 silly packumentCache full:https://registry.npmjs.org/get-them-args cache-miss
+24 silly fetch manifest shell-exec@1.0.2
+25 silly packumentCache full:https://registry.npmjs.org/shell-exec cache-miss
+26 http fetch GET 200 https://registry.npmjs.org/get-them-args 1009ms (cache miss)
+27 silly packumentCache full:https://registry.npmjs.org/get-them-args set size:undefined disposed:false
+28 http fetch GET 200 https://registry.npmjs.org/shell-exec 1955ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/shell-exec set size:undefined disposed:false
+30 silly placeDep ROOT get-them-args@1.3.2 OK for: kill-port@2.0.1 want: 1.3.2
+31 silly placeDep ROOT shell-exec@1.0.2 OK for: kill-port@2.0.1 want: 1.0.2
+32 silly reify moves {}
+33 silly audit bulk request {
+33 silly audit   'kill-port': [ '2.0.1' ],
+33 silly audit   'get-them-args': [ '1.3.2' ],
+33 silly audit   'shell-exec': [ '1.0.2' ]
+33 silly audit }
+34 silly tarball no local data for shell-exec@https://registry.npmjs.org/shell-exec/-/shell-exec-1.0.2.tgz. Extracting by manifest.
+35 silly tarball no local data for kill-port@https://registry.npmjs.org/kill-port/-/kill-port-2.0.1.tgz. Extracting by manifest.
+36 silly tarball no local data for get-them-args@https://registry.npmjs.org/get-them-args/-/get-them-args-1.3.2.tgz. Extracting by manifest.
+37 http fetch GET 200 https://registry.npmjs.org/shell-exec/-/shell-exec-1.0.2.tgz 447ms (cache miss)
+38 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 508ms
+39 silly audit report {}
+40 http fetch GET 200 https://registry.npmjs.org/kill-port/-/kill-port-2.0.1.tgz 1062ms (cache miss)
+41 http fetch GET 200 https://registry.npmjs.org/get-them-args/-/get-them-args-1.3.2.tgz 1599ms (cache miss)
+42 verbose cwd C:\Users\Bravin\A_stories\s_weaver\backend
+43 verbose os Windows_NT 10.0.19045
+44 verbose node v20.15.0
+45 verbose npm  v10.8.2
+46 verbose exit 0
+47 info ok

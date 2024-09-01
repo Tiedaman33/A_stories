@@ -1,0 +1,44 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v20.15.0
+3 silly config load:file:C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Bravin\A_stories\s_weaver\.npmrc
+5 silly config load:file:C:\Users\Bravin\.npmrc
+6 silly config load:file:C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\etc\npmrc
+7 verbose title npm exec elsint --fix
+8 verbose argv "exec" "--" "elsint" "--fix"
+9 verbose logfile logs-max:10 dir:C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataLocalnpm-cache\_logs\2024-08-11T14_59_35_015Z-
+10 verbose logfile C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataLocalnpm-cache\_logs\2024-08-11T14_59_35_015Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 http fetch GET 200 https://registry.npmjs.org/npm 3520ms
+14 http fetch GET 404 https://registry.npmjs.org/elsint 870ms (cache skip)
+15 http fetch GET 404 https://registry.npmjs.org/elsint 804ms (cache skip)
+16 verbose stack HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/elsint - Not found
+16 verbose stack     at C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\node_modules\npm-registry-fetch\lib\check-response.js:95:15
+16 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+16 verbose stack     at async RegistryFetcher.packument (C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\node_modules\pacote\lib\registry.js:90:19)
+16 verbose stack     at async RegistryFetcher.manifest (C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\node_modules\pacote\lib\registry.js:128:23)
+16 verbose stack     at async getManifest (C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\node_modules\libnpmexec\lib\index.js:27:22)
+16 verbose stack     at async missingFromTree (C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\node_modules\libnpmexec\lib\index.js:60:22)
+16 verbose stack     at async C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\node_modules\libnpmexec\lib\index.js:182:32
+16 verbose stack     at async Promise.all (index 0)
+16 verbose stack     at async exec (C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\node_modules\libnpmexec\lib\index.js:180:3)
+16 verbose stack     at async Npm.exec (C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\lib\npm.js:207:9)
+16 verbose stack     at async module.exports (C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataRoamingnpm\node_modules\npm\lib\cli\entry.js:74:5)
+17 verbose statusCode 404
+18 verbose pkgid elsint@*
+19 error code E404
+20 error 404 Not Found - GET https://registry.npmjs.org/elsint - Not found
+21 error 404
+22 error 404  'elsint@*' is not in this registry.
+23 error 404
+24 error 404 Note that you can also install from a
+25 error 404 tarball, folder, http url, or git url.
+26 verbose cwd C:\Users\Bravin\A_stories\s_weaver\backend
+27 verbose os Windows_NT 10.0.19045
+28 verbose node v20.15.0
+29 verbose npm  v10.8.2
+30 verbose exit 1
+31 verbose code 1
+32 error A complete log of this run can be found in: C:\Users\Bravin\A_stories\s_weaver\backend\UsersBravinAppDataLocalnpm-cache\_logs\2024-08-11T14_59_35_015Z-debug-0.log

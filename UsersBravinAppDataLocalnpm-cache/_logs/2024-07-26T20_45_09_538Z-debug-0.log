@@ -1,0 +1,18 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\Bravin\A_stories\UsersBravinAppDataRoamingnpm\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v20.15.0
+3 silly config load:file:C:\Users\Bravin\A_stories\UsersBravinAppDataRoamingnpm\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Bravin\.npmrc
+5 silly config load:file:C:\Users\Bravin\A_stories\UsersBravinAppDataRoamingnpm\etc\npmrc
+6 verbose title npm exec create-react-app s_weaver
+7 verbose argv "exec" "--" "create-react-app" "s_weaver"
+8 verbose logfile logs-max:10 dir:C:\Users\Bravin\A_stories\UsersBravinAppDataLocalnpm-cache\_logs\2024-07-26T20_45_09_538Z-
+9 verbose logfile C:\Users\Bravin\A_stories\UsersBravinAppDataLocalnpm-cache\_logs\2024-07-26T20_45_09_538Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 silly logfile done cleaning log files
+12 verbose cwd C:\Users\Bravin\A_stories
+13 verbose os Windows_NT 10.0.19045
+14 verbose node v20.15.0
+15 verbose npm  v10.8.2
+16 verbose exit 0
+17 info ok
