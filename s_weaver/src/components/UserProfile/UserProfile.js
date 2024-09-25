@@ -25,25 +25,28 @@ const UserProfile = ({ isLogin: initialIsLogin = true }) => {
     e.preventDefault();
     try {
       if (isLogin) {
-        const res = await axios.post('http://localhost:7000/api/users/login', {
+        const res = await axios.post('http://localhost:5000/api/users/login', {
           email: formData.email,
           password: formData.password
         });
         if (res) {
           const { token, user } = res.data
-          // console.log(user)
+          
+          //check if the user and token are definned
+          if (!token) {
+            throw new Error('Token not received');
+          }
 
           const userData = user || {};
           const userEmail = userData.email || 'invalid email';
           setMessage(`Login successful: Welcome ${userEmail}`);
-          // console.log(userEmail)
-          const authToken = token || "";
-          localStorage.setItem('token', authToken);
-          // console.log(authToken)
+          
+          //stroe toke in locak storage
+          localStorage.setItem('token', token);
           navigate('/dashboard');
         }
       } else {
-        await axios.post('http://localhost:7000/api/users/signup', {
+        await axios.post('http://localhost:5000/api/users/signup', {
           firstName: formData.firstName,
           lastName: formData.lastName,
           username: formData.username,

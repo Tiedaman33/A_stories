@@ -24,3 +24,10 @@ yarn-error.log*
 
 # npm cache
 /UsersBravinAppDataLocalnpm-cache/
+/UsersBravinAppDataRoamingnpm/
+/s_weaver/UsersBravinAppDataLocalnpm-cache/
+/s_weaver/src/components/UsersBravinAppDataLocalnpm-cache/
+/s_weaver/backend/UsersBravinAppDataLocalnpm-cache/
+/s_weaver/backend/UsersBravinAppDataRoamingnpm/
+/s_weaver/src/components/UserProfile/UsersBravinAppDataLocalnpm-cache/
+/s_weaver/src/components/UsersBravinAppDataLocalnpm-cache/

@@ -1,11 +1,10 @@
 const jwt = require('jsonwebtoken');
-const User = require('../models/userModel');
 
-const authMiddleware = async (req, res, next) => {
+const authMiddleware = (req, res, next) => {
   // Extract token from Authorization header
   const token = req.header('Authorization')?.replace('Bearer ', '');
 
-  console.log('Token:', token); // Debug token
+  console.log('Token received:', token); // Debug token
 
   // Ensure the token exists
   if (!token) {
@@ -15,10 +14,15 @@ const authMiddleware = async (req, res, next) => {
   try {
     // Verify the token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    console.log('Decoded:', decoded); // Debug decoded data
+    console.log('Decoded token payload:', decoded); // Debug decoded data
+
+    // Ensure decoded has user and user.id
+    if (!decoded.user || !decoded.user.id) {
+      return res.status(401).json({ message: 'Invalid token structure' });
+    }
 
     // Attach user data to request
-    req.user = decoded.user;
+    req.user = decoded.user; // Now req.user should have the correct structure (user.id)
     next();
   } catch (err) {
     console.log('Token verification error:', err.message); // Debug token verification error

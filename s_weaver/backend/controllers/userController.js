@@ -23,18 +23,18 @@ const registerUser = async (req, res) => {
       password,
       username,
     });
-
+//hasing the password before saving it 
     const salt = await bcrypt.genSalt(10);
     user.password = await bcrypt.hash(password, salt);
 
     await user.save();
-
+//generates a token after saving that has a payload of the user ID
     const payload = {
       user: {
         id: user.id,
       },
     };
-
+//generate token using payload (user id) and the  process.env.JWT_SECRET
     jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' }, (err, token) => {
       if (err) throw err;
       res.json({ token });
@@ -65,9 +65,7 @@ const authUser = async (req, res) => {
     const payload = {
       user: {
         id: user.id,
-        email: user.email,
-        username: user.username
-        // Optionally include more user details here
+         // Optionally include more user details here
       },
     };
 

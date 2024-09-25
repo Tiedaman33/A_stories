@@ -102,3 +102,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ![StoryWeaver Screenshot](screenshot.png)
 
+# finally resolved the disturbign error of failing to fetch the current user. i realised that axios automatically handles parsing and didint need to use await response.json
+# also, i directly used setUserData(response.data) in handling handling. instead of  setUserData(data) since the user data had been parsed from the Axios repsonse. 

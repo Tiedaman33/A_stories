@@ -1,8 +1,8 @@
 // src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import store from './store'; // Adjust path as needed
+import store from './redux/store'; // Adjust path as needed
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
