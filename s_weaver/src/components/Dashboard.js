@@ -170,41 +170,37 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white">
       <div className="container mx-auto max-w-6xl p-6">
-       {/* Header */}
-<header className="flex justify-between items-center mb-10 bg-white rounded-lg p-4 shadow-lg">
-  <h1 className="text-3xl font-bold text-blue-600">StoryWeaver</h1>
-  <nav className="flex items-center space-x-4">
-    <a href="/" className="text-lg font-semibold text-blue-600 hover:text-purple-500">Home</a>
-    <a href="/browse" className="text-lg font-semibold text-blue-600 hover:text-purple-500">Browse Stories</a>
-    <div className="relative">
-    <button
-  onClick={toggleDropdown}
-  className="flex items-center text-lg font-semibold text-blue-600 focus:outline-none"
->
-
-        <span className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
-          {userData && userData.username ? userData.username.charAt(0).toUpperCase() : '?'}
-        </span>
-        <span className="ml-2">{userData ? userData.username : 'User'}</span>
-      </button>
-      {isDropdownOpen && (
-        <ul className="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg">
-          <li className="px-4 py-2 hover:bg-gray-100"><a href="/profile">My Profile</a></li>
-          <li className="px-4 py-2 hover:bg-gray-100"><a href="/inbox">Inbox</a></li>
-          <li className="px-4 py-2 hover:bg-gray-100"><a href="/notifications">Notifications</a></li>
-          <li className="px-4 py-2 hover:bg-gray-100"><a href="/library">Library</a></li>
-          <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={handleLogout}>Logout</li>
-        </ul>
-      )}
-    </div>
-  </nav>
-</header>
-
+        {/* Header */}
+        <header className="flex justify-between items-center mb-10 bg-white rounded-lg p-4 shadow-lg">
+          <h1 className="text-3xl font-bold text-blue-600">StoryWeaver</h1>
+          <nav className="flex items-center space-x-4">
+            <a href="/" className="text-lg font-semibold text-blue-600 hover:text-purple-500">Home</a>
+            <a href="/browse" className="text-lg font-semibold text-blue-600 hover:text-purple-500">Browse Stories</a>
+            <div className="relative">
+              <button onClick={toggleDropdown} className="flex items-center text-lg font-semibold text-blue-600 focus:outline-none">
+                <span className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                  {userData && userData.username ? userData.username.charAt(0).toUpperCase() : '?'}
+                </span>
+                <span className="ml-2">{userData ? userData.username : 'User'}</span>
+              </button>
+              {isDropdownOpen && (
+                <ul className="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg">
+                  <li className="px-4 py-2 hover:bg-gray-100"><a href="/profile">My Profile</a></li>
+                  <li className="px-4 py-2 hover:bg-gray-100"><a href="/inbox">Inbox</a></li>
+                  <li className="px-4 py-2 hover:bg-gray-100"><a href="/notifications">Notifications</a></li>
+                  <li className="px-4 py-2 hover:bg-gray-100"><a href="/library">Library</a></li>
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={handleLogout}>Logout</li>
+                </ul>
+              )}
+            </div>
+          </nav>
+        </header>
+  
         {/* Main Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {/* Upload Story Form */}
           <div className="col-span-1 flex flex-col">
-            <form onSubmit={handleUploadStory} className="bg-white p-6 rounded-lg shadow-md flex-grow">
+            <form onSubmit={handleUploadStory} className="bg-white p-6 rounded-lg shadow-md">
               <h2 className="text-2xl font-bold mb-4 text-center text-purple-600">Upload a New Story</h2>
               <div className="mb-4">
                 <label className="block text-sm font-semibold mb-2 text-black">Title</label>
@@ -254,18 +250,37 @@ const Dashboard = () => {
           {/* Featured Stories and Story List Sections */}
           <div className="col-span-2 flex flex-col gap-4">
             {/* Featured Stories Section */}
-            <section className="bg-white rounded-xl shadow-lg text-gray-900 p-6 flex-grow">
-              <h2 className="text-3xl font-bold mb-4 text-purple-600">Featured Stories</h2>
-              <div className="flex space-x-4">
-                <FeaturedStories />
-              </div>
-            </section>
+<section className="bg-white rounded-xl shadow-lg text-gray-900 p-6 flex-grow max-h-[80vh] overflow-y-auto">
+  <h2 className="text-3xl font-bold mb-4 text-purple-600">Featured Stories</h2>
+  <div className="flex flex-wrap gap-4">
+    {/* Ensure FeaturedStories component renders items horizontally */}
+    <div className="flex space-x-4">
+      <FeaturedStories />
+    </div>
+  </div>
+</section>
+
   
             {/* Story List Section */}
-            <section className="bg-white rounded-xl shadow-lg text-gray-900 p-6 flex-grow">
+            <section className="bg-white rounded-xl shadow-lg text-gray-900 p-6 flex-grow max-h-[50vh] overflow-y-auto">
               <h2 className="text-3xl font-bold mb-4 text-purple-600">Story List</h2>
-              <div className="flex space-x-4">
-                <StoryList stories={stories} onDelete={handleDeleteStory} />
+              <div className="flex flex-wrap gap-4">
+                {stories.map((story, index) => (
+                  <div
+                    key={story.id}
+                    className="transform transition-transform duration-500 ease-in-out hover:scale-105 p-4 bg-gray-100 rounded-lg shadow-md"
+                    style={{ margin: '10px' }}
+                  >
+                    <h3 className="text-xl font-semibold text-black">{story.title}</h3>
+                    <p className="text-gray-700">{story.description}</p>
+                    <button
+                      onClick={() => handleDeleteStory(story.id)}
+                      className="mt-2 bg-red-500 text-white p-1 rounded-lg hover:bg-red-600 transition duration-300"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                ))}
               </div>
             </section>
           </div>
@@ -279,8 +294,6 @@ const Dashboard = () => {
         </footer>
       </div>
     </div>
-  );  
-  
+  );
 };
-
-export default Dashboard;
+export default Dashboard;  
