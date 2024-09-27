@@ -1,17 +1,22 @@
 // src/redux/storyReducer.js
+import { createSlice } from '@reduxjs/toolkit';
+
 const initialState = {
-    storiesList: [], // Empty array as a placeholder for stories
-  };
-  
-  function storyReducer(state = initialState, action) {
-    switch (action.type) {
-      // You can handle actions like 'SET_STORIES' later if needed
-      case 'SET_STORIES':
-        return { ...state, storiesList: action.payload };
-      default:
-        return state;
-    }
-  }
-  
-  export default storyReducer;
-  
+  storiesList: [],
+};
+
+const storySlice = createSlice({
+  name: 'stories',
+  initialState,
+  reducers: {
+    setStories(state, action) {
+      state.storiesList = action.payload; // Update the stories list
+    },
+  },
+});
+
+// Export the action
+export const { setStories } = storySlice.actions;
+
+// Export the reducer
+export default storySlice.reducer;

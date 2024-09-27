@@ -5,13 +5,26 @@ const storySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  content: {
+  genre: {
     type: String,
+    required: true, // Set to false if optional
+  },
+  datePublished: {
+    type: Date,
+    required: true, // Set to false if optional
+  },
+  filePath: {
+    type: String, // Store the path of the uploaded file
     required: true,
   },
   createdAt: {
     type: Date,
     default: Date.now,
+  },
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User', // Assuming you're referencing a User model
+    required: true,
   },
 });
 

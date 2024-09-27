@@ -3,21 +3,38 @@ const Story = require('../models/storyModel'); // Import the Story model
 
 // Controller to handle uploading a new story
 exports.uploadStory = async (req, res) => {
-  const { title, content } = req.body;
+  const { title, genre, datePublished } = req.body;
 
-  if (!title || !content) {
-    return res.status(400).json({ message: 'Title and content are required.' });
+  console.log('Received file:', req.file);
+
+  // Check if the file was uploaded
+  if (!req.file) {
+      return res.status(400).json({ message: 'File not uploaded. Please select a file.' });
+  }
+
+  const filePath = req.file.path; // Get the path of the uploaded file
+
+  // Validate required fields
+  if (!title || !genre || !datePublished) {
+      return res.status(400).json({ message: 'Title, genre, and datePublished are required.' });
   }
 
   try {
-    const newStory = new Story({ title, content, user: req.user.id });
-    await newStory.save();
-    res.status(201).json(newStory);
+      const newStory = new Story({
+          title,
+          genre,
+          datePublished,
+          filePath,
+          user: req.user.id,
+      });
+      await newStory.save();
+      res.status(201).json(newStory);
   } catch (err) {
-    console.error('Error uploading story:', err);
-    res.status(500).json({ message: 'Server error' });
+      console.error('Error uploading story:', err);
+      res.status(500).json({ message: 'Server error' });
   }
 };
+
 
 // Controller to handle fetching all stories
 exports.getStories = async (req, res) => {

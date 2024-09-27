@@ -2,29 +2,24 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const StoryList = () => {
-  // Assuming the stories are stored in Redux
-  const stories = useSelector((state) => state.stories); // Adjust the state path if necessary
+  const stories = useSelector((state) => state.stories.storiesList); // Ensure you're accessing the right path
 
-  // Check if stories is defined and is an array
-  if (!Array.isArray(stories)) {
-    return <div>No stories available.</div>; // Handle case where stories is not defined
+  if (!Array.isArray(stories) || stories.length === 0) {
+    return <div>No stories available.</div>;
   }
 
   return (
     <div>
-      <h2>Story List</h2>
-      {stories.length === 0 ? (
-        <p>No stories found.</p>
-      ) : (
-        <ul>
-          {stories.map((story) => (
-            <li key={story._id}>
-              <h3>{story.title}</h3>
-              <p>{story.content}</p>
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul>
+        {stories.map((story) => (
+          <li key={story._id}>
+            <h3>{story.title}</h3>
+            <p>Genre: {story.genre}</p>
+            <p>Published on: {new Date(story.datePublished).toLocaleDateString()}</p>
+            <p>File Path: {story.filePath}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

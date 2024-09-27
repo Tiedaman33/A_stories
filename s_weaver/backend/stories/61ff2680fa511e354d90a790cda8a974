@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Rod Cut Card</title>
+  <link rel="stylesheet" href="productpage.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="container">
+      <div class="product-div">
+        <div class="product-div-left">
+          <div class="img-container">
+            <img src="duvets/af1.png" alt="boots" />
+          </div>
+          <div class="product-div-right">
+            <span class="product-name">kids soccer boots</span>
+            <span class="product-price">$100.24</span>
+            <p class="product-description"> This CSS positions the .button-container at 50% from the top and left of its parent .product, and the transform property centers the button within the container by moving it back by 50% of its own width and height</button>
+            <button class="view-btn">View</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

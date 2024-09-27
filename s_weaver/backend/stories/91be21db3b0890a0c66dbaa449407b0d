@@ -1,0 +1,4 @@
+clear the command window with clc, clear all and close alll functions. 
+the uigetfile fucnion then selectes an image from the current folder by specifiying its name.
+the imread fucntion read te image from the speccified file name, while inferring the file from its contents. 
+after reading the image we convert the image color from the standard rbg to graynd then show the image .

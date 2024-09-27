@@ -1,0 +1,44 @@
+Postmortem: Web Application Outage - The Tale of the Missing Index
+
+When an Index Takes a Vacation: A Dramatic Recreation
+
+Issue Summary
+Duration:
+
+Start: June 7, 2024, 10:30 AM UTC
+End: June 7, 2024, 12:00 PM UTC
+Impact:
+
+Our e-commerce platform decided to play hide and seek, but forgot to tell anyone. This left 80% of users staring at a spinning wheel of doom, unable to access the site or complete purchases. Estimated revenue loss? $15,000. Estimated number of facepalms? Too many to count.
+Root Cause:
+
+A rogue database index decided to take an extended vacation, leaving our queries wandering aimlessly in the dark. Without the index, our database performance tanked, and our servers waved the white flag.
+Timeline
+10:30 AM: 📢 Issue detected by monitoring alert screaming "Help! Everything is slow!"
+10:32 AM: 🚀 On-call engineer jumps into action via PagerDuty.
+10:35 AM: 🔍 Initial investigation begins, targeting recent code deployments because, of course, new code is always guilty until proven innocent.
+10:45 AM: 🔄 Rollback of the new feature to its pre-crisis state, but no joy.
+11:00 AM: 🤔 Scratch heads. Reassess. Realize the culprit might not be the new code.
+11:10 AM: 📈 Deep dive into database metrics. Discovery of severely delayed queries.
+11:20 AM: 🆘 Call in the database squad.
+11:35 AM: 🕵️‍♂️ Missing index found on a key table. The mystery deepens.
+11:50 AM: 🛠 Index recreated. Fingers crossed.
+12:00 PM: 🎉 Service restored. High-fives all around. Monitoring confirms normal operation.
+Root Cause and Resolution
+Root Cause:
+
+The incident was caused by the sudden disappearance of a crucial database index on a heavily queried table. This missing index turned our normally efficient queries into lazy, meandering sloths, clogging up the works and leading to widespread server timeouts.
+Resolution:
+
+The database team swooped in, capes fluttering in the wind, and restored the missing index to its rightful place. With the index back, query performance skyrocketed, and our servers breathed a collective sigh of relief.
+Corrective and Preventative Measures
+Improvements/Fixes:
+
+Database Index Monitoring: We'll install a virtual nanny to keep an eye on those indexes and alert us if any decide to go AWOL.
+Performance Testing: Regular drill sessions to simulate heavy traffic and uncover any potential bottlenecks before they become showstoppers.
+Pre-deployment Checks: Enhance our deployment pipeline with a checklist to ensure all indexes are present and accounted for before any code goes live.
+Tasks:
+
+Task 1: Implement a script to periodically check for missing indexes and alert the database team. Due: June 15, 2024
+Task 2: Set up a performance testing environment that simulates high traffic scenarios to identify and address potential performance issues. Due: June 20, 2024
+Task 3: Update deployment pipeline to include automated checks for database indexes before pushing new code to production. Due: June 25, 2024

@@ -24,7 +24,6 @@ app.use(cors({
 // Define routes
 app.use('/api/users', userRoutes);
 app.use('/api/stories', storyRoutes);
-app.use('/api/users', bookRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 5000;

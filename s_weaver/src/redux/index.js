@@ -1,3 +1,5 @@
+//src/redux/index.js
+
 import { combineReducers } from 'redux';
 import userReducer from './userReducer';
 import storyReducer from './storyReducer';

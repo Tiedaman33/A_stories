@@ -4,16 +4,13 @@ import { useSelector } from 'react-redux';
 const FeaturedStories = () => {
   // Update the selector based on your actual state shape
   const stories = useSelector((state) => state.stories.storiesList); // Adjust path as needed
+  const featuredStories = stories.slice(0, 5); // feature the first 5 stories
 
   // Handle case where stories is not defined or not an array
   if (!Array.isArray(stories) || stories.length === 0) {
-    return (
-      <div className="featured-stories p-5 bg-white rounded-xl shadow-md text-gray-800 mb-8">
-        <h2 className="text-2xl font-bold mb-4 text-center text-purple-600">Featured Stories</h2>
-        <p className="text-gray-600">No featured stories available.</p>
-      </div>
-    );
-  }
+    return <div>No stories available.</div>; // Handle case where stories is not defined
+}
+
 
   return (
     <div className="featured-stories p-5 bg-white rounded-xl shadow-md text-gray-800 mb-8">

@@ -1,0 +1,6 @@
+in q1:  Prompt for the name should be shown only once at the start. Input Readability: use input().strip() for cleaning up user input.
+in q2: The line that checks for empty input should prints "Fine, be that way." instead of "You didn't provide any input."
+in q3: there is a difference is the order in which the seed information is printed relative to the random numbers
+in q4: When the user input was a space (' '), the code treated it as an empty string after using .strip()
+place the current user inamein the profle section and his user id, improve on styling and display stories in the list of storylisn immeidiately after  uploading, 
+create a current user personalm prfole.
