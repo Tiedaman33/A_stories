@@ -2,20 +2,20 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const FeaturedStories = () => {
-  // Update the selector based on your actual state shape
-  const stories = useSelector((state) => state.stories.storiesList); // Adjust path as needed
-  const featuredStories = stories.slice(0, 5); // Feature the first 5 stories
+  const stories = useSelector((state) => state.stories.storiesList); // Ensure path is correct
 
   // Handle case where stories is not defined or not an array
   if (!Array.isArray(stories) || stories.length === 0) {
-    return <div>No stories available.</div>; // Handle case where stories is not defined
+    return <div>No stories available.</div>;
   }
 
+  const featuredStories = stories.slice(0, 5); // Feature the first 5 stories
+
   return (
-    <div className="featured-stories p-5 bg-white rounded-xl shadow-md text-gray-800 mb-8">
-      <div className="flex flex-wrap gap-4"> {/* Change to flex container */}
-        {featuredStories.map((story) => ( // Use featuredStories here
-          <div key={story.id} className="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2"> {/* Adjust width based on screen size */}
+    <div className="featured-stories p-5 bg-white rounded-xl shadow-md text-black-800 mb-8">
+      <div className="flex flex-wrap gap-4">
+        {featuredStories.map((story) => (
+          <div key={story.id} className="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
             <div className="p-3 border border-gray-200 rounded-lg bg-gray-100">
               <h3 className="text-lg font-semibold">{story.title}</h3>
               <p className="text-gray-600">{story.description}</p>
@@ -26,5 +26,4 @@ const FeaturedStories = () => {
     </div>
   );
 };
-
 export default FeaturedStories;

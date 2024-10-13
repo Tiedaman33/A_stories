@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setStories } from '../redux/storiesSlice';
@@ -7,12 +7,12 @@ import FeaturedStories from './FeaturedStories';
 import StoryList from './StoryList';
 
 const Dashboard = () => {
+  const fileInputRef = useRef(null);
+  const [featuredStories, setFeaturedStories] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const [userData, setUserData] = useState(null);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const storiesList = useSelector((state) => state.stories.storiesList);
-
   const [storyData, setStoryData] = useState({
     title: '',
     genre: '',
@@ -22,13 +22,13 @@ const Dashboard = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const stories = useSelector(state => state.stories.storiesList); // Correctly reference the stories list here
+  const stories = useSelector((state) => state.stories.storiesList);
 
   const fetchUserData = async () => {
     const token = localStorage.getItem('token');
     try {
       const userResponse = await axios.get('http://localhost:5000/api/users/userprofile', {
-        headers: { 'Authorization': `Bearer ${token}` },
+        headers: { Authorization: `Bearer ${token}` },
       });
       setUserData(userResponse.data);
     } catch (err) {
@@ -38,6 +38,15 @@ const Dashboard = () => {
       navigate('/userprofile');
     }
   };
+   // Function to fetch featured stories from API
+   const fetchFeaturedStories = async () => {
+    try {
+      const response = await axios.get('http://localhost:5000/api/stories'); // Replace with your API endpoint
+      setFeaturedStories(response.data.slice(0, 10)); // Limit to first 10 stories
+    } catch (error) {
+      console.error("Error fetching featured stories:", error);
+    }
+  };
 
   const fetchStories = async () => {
     const token = localStorage.getItem('token');
@@ -45,7 +54,7 @@ const Dashboard = () => {
 
     try {
       const storiesResponse = await axios.get('http://localhost:5000/api/stories', {
-        headers: { 'Authorization': `Bearer ${token}` },
+        headers: { Authorization: `Bearer ${token}` },
       });
       dispatch(setStories(storiesResponse.data));
       console.log('Updated stories in Redux:', storiesResponse.data);
@@ -89,8 +98,8 @@ const Dashboard = () => {
       try {
         await axios.post('http://localhost:5000/api/stories/upload', formData, {
           headers: {
-            'Authorization': `Bearer ${token}`,
-            'Content-Type': 'multipart/form-data',
+            'Authorization': `Bearer ${token}`, // Fixed: Use backticks for template literals
+            //'Content-Type': 'multipart/form-data', // It's usually safe to let axios set this for you
           },
         });
 
@@ -101,7 +110,10 @@ const Dashboard = () => {
           datePublished: new Date().toISOString().split('T')[0],
           storyFile: null,
         });
-        fetchStories();
+        if (fileInputRef.current) {
+          fileInputRef.current.value = null; // Reset the file input
+        }
+        fetchStories(); // Fetch stories after upload to refresh the list
       } catch (err) {
         console.error('Failed to upload story:', err);
         setError('Failed to upload story.');
@@ -109,16 +121,17 @@ const Dashboard = () => {
     } else {
       setError('No token found. Please log in again.');
     }
-  };
+};
+
 
   const handleDeleteStory = async (storyId) => {
     const token = localStorage.getItem('token');
     if (token) {
       try {
         await axios.delete(`http://localhost:5000/api/stories/${storyId}`, {
-          headers: { 'Authorization': `Bearer ${token}` },
+          headers: { Authorization: `Bearer ${token}` },
         });
-        dispatch(setStories(storiesList.filter((s) => s._id !== storyId)));
+        dispatch(setStories(stories.filter((s) => s._id !== storyId)));
       } catch (err) {
         console.error('Failed to delete story:', err);
         setError('Failed to delete story.');
@@ -152,6 +165,10 @@ const Dashboard = () => {
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleCardClick = (storyId) => {
+    navigate(`/stories/${storyId}`);
   };
 
   if (loading) {
@@ -200,7 +217,7 @@ const Dashboard = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {/* Upload Story Form */}
           <div className="col-span-1 flex flex-col">
-            <form onSubmit={handleUploadStory} className="bg-white p-6 rounded-lg shadow-md">
+            <form onSubmit={handleUploadStory} className="bg-white p-6 rounded-lg shadow-md flex-grow">
               <h2 className="text-2xl font-bold mb-4 text-center text-purple-600">Upload a New Story</h2>
               <div className="mb-4">
                 <label className="block text-sm font-semibold mb-2 text-black">Title</label>
@@ -250,31 +267,29 @@ const Dashboard = () => {
           {/* Featured Stories and Story List Sections */}
           <div className="col-span-2 flex flex-col gap-4">
             {/* Featured Stories Section */}
-<section className="bg-white rounded-xl shadow-lg text-gray-900 p-6 flex-grow max-h-[80vh] overflow-y-auto">
-  <h2 className="text-3xl font-bold mb-4 text-purple-600">Featured Stories</h2>
-  <div className="flex flex-wrap gap-4">
-    {/* Ensure FeaturedStories component renders items horizontally */}
-    <div className="flex space-x-4">
-      <FeaturedStories />
-    </div>
-  </div>
-</section>
-
+            <section className="bg-white rounded-xl shadow-lg text-gray-900 p-6 flex-grow max-h-[80vh] overflow-y-auto">
+              <h2 className="text-3xl font-bold mb-4 text-purple-600">Featured Stories</h2>
+              <div className="flex flex-wrap gap-4">
+                <div className="flex space-x-4">
+                  <FeaturedStories />
+                </div>
+              </div>
+            </section>
   
             {/* Story List Section */}
             <section className="bg-white rounded-xl shadow-lg text-gray-900 p-6 flex-grow max-h-[50vh] overflow-y-auto">
               <h2 className="text-3xl font-bold mb-4 text-purple-600">Story List</h2>
               <div className="flex flex-wrap gap-4">
-                {stories.map((story, index) => (
+                {stories.map((story) => (
                   <div
                     key={story.id}
-                    className="transform transition-transform duration-500 ease-in-out hover:scale-105 p-4 bg-gray-100 rounded-lg shadow-md"
-                    style={{ margin: '10px' }}
+                    className="transform transition-transform duration-500 ease-in-out hover:scale-105 p-4 bg-gray-100 rounded-lg shadow-md min-w-[200px] max-w-[200px] flex flex-col cursor-pointer"
+                    onClick={() => handleStoryClick(story.id)} // Handle the story click to redirect to the story content
                   >
-                    <h3 className="text-xl font-semibold text-black">{story.title}</h3>
-                    <p className="text-gray-700">{story.description}</p>
+                    <h3 className="text-xl font-semibold text-black overflow-hidden text-ellipsis whitespace-nowrap">{story.title}</h3>
+                    <p className="text-gray-700 flex-grow">{story.description}</p>
                     <button
-                      onClick={() => handleDeleteStory(story.id)}
+                      onClick={(e) => { e.stopPropagation(); handleDeleteStory(story.id); }} // Prevents the click event from triggering on the card
                       className="mt-2 bg-red-500 text-white p-1 rounded-lg hover:bg-red-600 transition duration-300"
                     >
                       Delete
@@ -295,5 +310,6 @@ const Dashboard = () => {
       </div>
     </div>
   );
+  
 };
 export default Dashboard;  

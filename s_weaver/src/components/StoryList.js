@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-const StoryList = () => {
+const StoryList = ({ onCardClick }) => { // Accepting onCardClick as a prop
   const stories = useSelector((state) => state.stories.storiesList); // Ensure you're accessing the right path
 
   if (!Array.isArray(stories) || stories.length === 0) {
@@ -12,7 +12,11 @@ const StoryList = () => {
     <div>
       <ul>
         {stories.map((story) => (
-          <li key={story._id}>
+          <li 
+            key={story._id} 
+            onClick={() => onCardClick(story._id)} // Adding onClick event to trigger the navigation
+            className="cursor-pointer hover:bg-gray-200 p-2 rounded" // Optional: Tailwind CSS classes for better UI
+          >
             <h3>{story.title}</h3>
             <p>Genre: {story.genre}</p>
             <p>Published on: {new Date(story.datePublished).toLocaleDateString()}</p>

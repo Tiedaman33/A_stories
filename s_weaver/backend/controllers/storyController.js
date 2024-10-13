@@ -46,6 +46,15 @@ exports.getStories = async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 };
+//controller to handle fecthing featured stories
+exports.getFeaturedStories = async (req, res) => {
+  try {
+      const featuredStories = await Story.find({ featured: true }); // Assuming you have a field 'featured'
+      res.json(featuredStories);
+  } catch (error) {
+      res.status(500).json({ message: 'Server error', error: error.message });
+  }
+};
 
 // Controller to handle deleting a specific story
 exports.deleteStory = async (req, res) => {
