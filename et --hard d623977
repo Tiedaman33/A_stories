@@ -1,0 +1,51 @@
+[33m41c1e2a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: rebase (abort): returning to refs/heads/main
+[33md623977[m HEAD@{1}: commit: update
+[33m9a58a1a[m[33m ([m[1;32mchekout[m[33m)[m HEAD@{2}: commit: updated
+[33m620e4ee[m HEAD@{3}: rebase (edit): storyweaver update
+[33m5fb854f[m HEAD@{4}: commit (amend): storyweaver update
+[33m8dac874[m HEAD@{5}: rebase: fast-forward
+[33me93bc9e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{6}: rebase (start): checkout HEAD~6
+[33m41c1e2a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{7}: rebase (finish): returning to refs/heads/main
+[33m41c1e2a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{8}: rebase (start): checkout HEAD~5
+[33m41c1e2a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{9}: rebase (finish): returning to refs/heads/main
+[33m41c1e2a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{10}: rebase (edit): update
+[33ma41090c[m HEAD@{11}: commit (amend): update
+[33me9d1095[m HEAD@{12}: rebase (edit): update
+[33mdadfd81[m HEAD@{13}: rebase (edit): Revert "storyweaver update"
+[33m9f70108[m HEAD@{14}: rebase (edit): storyweaver update
+[33m2137732[m HEAD@{15}: commit (amend): storyweaver update
+[33me928be2[m HEAD@{16}: rebase (edit): storyweaver update
+[33m8dac874[m HEAD@{17}: commit (amend): storyweaver update
+[33m06a90b2[m HEAD@{18}: rebase: fast-forward
+[33me93bc9e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{19}: rebase (start): checkout 06a90b2~1
+[33mc05a883[m HEAD@{20}: rebase (finish): returning to refs/heads/main
+[33mc05a883[m HEAD@{21}: rebase: fast-forward
+[33m9151a76[m HEAD@{22}: rebase: fast-forward
+[33mc1292d1[m HEAD@{23}: rebase: fast-forward
+[33me560c88[m HEAD@{24}: rebase: fast-forward
+[33m5c306fb[m HEAD@{25}: rebase: fast-forward
+[33m06a90b2[m HEAD@{26}: rebase: fast-forward
+[33me93bc9e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{27}: rebase (start): checkout HEAD~6
+[33mc05a883[m HEAD@{28}: commit (amend): update
+[33m9e0c1cf[m HEAD@{29}: rebase (finish): returning to refs/heads/main
+[33m9e0c1cf[m HEAD@{30}: rebase: fast-forward
+[33m9151a76[m HEAD@{31}: rebase: fast-forward
+[33mc1292d1[m HEAD@{32}: rebase: fast-forward
+[33me560c88[m HEAD@{33}: rebase: fast-forward
+[33m5c306fb[m HEAD@{34}: rebase: fast-forward
+[33m06a90b2[m HEAD@{35}: rebase: fast-forward
+[33me93bc9e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{36}: rebase (start): checkout HEAD~6
+[33m9e0c1cf[m HEAD@{37}: rebase (abort): returning to refs/heads/main
+[33m0025a84[m HEAD@{38}: commit: update
+[33me93bc9e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{39}: rebase (start): checkout HEAD~6
+[33m9e0c1cf[m HEAD@{40}: commit: update
+[33m9151a76[m HEAD@{41}: commit: update
+[33mc1292d1[m HEAD@{42}: commit: Revert "storyweaver update"
+[33me560c88[m HEAD@{43}: checkout: moving from 709f71e80700f7db592c42b30c96d5ceeabbd7d6 to main
+[33m709f71e[m HEAD@{44}: commit (amend): storyweaver update
+[33m06a90b2[m HEAD@{45}: checkout: moving from main to 06a90b2be369152af0336c2d7ea2bf6d13c4dacf
+[33me560c88[m HEAD@{46}: commit: storyweaver update
+[33m5c306fb[m HEAD@{47}: commit: storyweaver update
+[33m06a90b2[m HEAD@{48}: commit: storyweaver update
+[33me93bc9e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{49}: commit: sweaver
+[33m83a538e[m HEAD@{50}: commit (initial): weaver
