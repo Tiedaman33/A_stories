@@ -22,10 +22,10 @@ const authMiddleware = (req, res, next) => {
     }
 
     // Attach user data to request
-    req.user = decoded.user; // Now req.user should have the correct structure (user.id)
+    req.user = decoded.user;
     next();
   } catch (err) {
-    console.log('Token verification error:', err.message); // Debug token verification error
+    console.log('Token verification error:', err.message); // token verification error
     res.status(401).json({ message: 'Token is not valid' });
   }
 };

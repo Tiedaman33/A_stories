@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const FeaturedStories = () => {
-  const stories = useSelector((state) => state.stories.storiesList); // Ensure path is correct
+  const stories = useSelector((state) => state.stories.storiesList); 
 
   // Handle case where stories is not defined or not an array
   if (!Array.isArray(stories) || stories.length === 0) {

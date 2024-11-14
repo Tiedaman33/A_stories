@@ -1,0 +1,1264 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.7.0
+2 info using node@v18.20.4
+3 silly config:load:file:C:\Users\Bravin\AppData\Roaming\nvm\v18.20.4\node_modules\npm\npmrc
+4 silly config:load:file:C:\Users\Bravin\.npmrc
+5 silly config:load:file:C:\Users\Bravin\AppData\Roaming\npm\etc\npmrc
+6 verbose title npm install heroku
+7 verbose argv "install" "--global" "heroku"
+8 verbose logfile logs-max:10 dir:C:\Users\Bravin\A_stories\UsersBravinAppDataLocalnpm-cache\_logs\2024-11-02T12_12_47_194Z-
+9 verbose logfile C:\Users\Bravin\A_stories\UsersBravinAppDataLocalnpm-cache\_logs\2024-11-02T12_12_47_194Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest heroku@*
+14 http fetch GET 200 https://registry.npmjs.org/npm 2669ms
+15 http fetch GET 200 https://registry.npmjs.org/heroku 2245ms (cache miss)
+16 silly placeDep ROOT heroku@9.3.2 OK for:  want: *
+17 silly fetch manifest ws@^6.2.2
+18 silly fetch manifest got@^11.8.6
+19 silly fetch manifest psl@^1.9.0
+20 http fetch GET 200 https://registry.npmjs.org/got 480ms (cache miss)
+21 silly fetch manifest glob@^10.3.10
+22 http fetch GET 200 https://registry.npmjs.org/ws 733ms (cache revalidated)
+23 silly fetch manifest open@^8.4.2
+24 http fetch GET 200 https://registry.npmjs.org/glob 537ms (cache revalidated)
+25 silly fetch manifest ssh2@^1.15.0
+26 http fetch GET 200 https://registry.npmjs.org/open 510ms (cache revalidated)
+27 silly fetch manifest bytes@^3.1.2
+28 http fetch GET 200 https://registry.npmjs.org/ssh2 470ms (cache miss)
+29 silly fetch manifest chalk@^2.4.2
+30 http fetch GET 200 https://registry.npmjs.org/psl 1564ms (cache revalidated)
+31 silly fetch manifest debug@4.3.4
+32 http fetch GET 200 https://registry.npmjs.org/bytes 479ms (cache revalidated)
+33 silly fetch manifest execa@5.1.1
+34 http fetch GET 200 https://registry.npmjs.org/chalk 518ms (cache updated)
+35 silly fetch manifest tslib@1.14.1
+36 http fetch GET 200 https://registry.npmjs.org/debug 532ms (cache updated)
+37 silly fetch manifest urijs@^1.19.11
+38 http fetch GET 200 https://registry.npmjs.org/execa 409ms (cache updated)
+39 silly fetch manifest lodash@^4.17.21
+40 http fetch GET 200 https://registry.npmjs.org/urijs 390ms (cache miss)
+41 silly fetch manifest printf@0.6.1
+42 http fetch GET 200 https://registry.npmjs.org/tslib 464ms (cache updated)
+43 silly fetch manifest semver@7.6.0
+44 http fetch GET 200 https://registry.npmjs.org/lodash 387ms (cache updated)
+45 silly fetch manifest foreman@^3.0.1
+46 http fetch GET 200 https://registry.npmjs.org/semver 484ms (cache updated)
+47 silly fetch manifest phoenix@^1.6.14
+48 http fetch GET 200 https://registry.npmjs.org/printf 680ms (cache miss)
+49 silly fetch manifest rollbar@^2.26.2
+50 http fetch GET 200 https://registry.npmjs.org/foreman 657ms (cache miss)
+51 silly fetch manifest date-fns@^2.30.0
+52 http fetch GET 200 https://registry.npmjs.org/phoenix 381ms (cache miss)
+53 silly fetch manifest filesize@^10.1.2
+54 http fetch GET 200 https://registry.npmjs.org/rollbar 461ms (cache miss)
+55 silly fetch manifest fs-extra@^9.1
+56 http fetch GET 200 https://registry.npmjs.org/filesize 438ms (cache updated)
+57 silly fetch manifest inquirer@^8.2.6
+58 http fetch GET 200 https://registry.npmjs.org/date-fns 789ms (cache miss)
+59 silly fetch manifest strftime@^0.10.0
+60 http fetch GET 200 https://registry.npmjs.org/fs-extra 453ms (cache updated)
+61 silly fetch manifest term-img@^4.1.0
+62 http fetch GET 200 https://registry.npmjs.org/inquirer 385ms (cache miss)
+63 silly fetch manifest commander@^2.15.1
+64 http fetch GET 200 https://registry.npmjs.org/strftime 371ms (cache miss)
+65 silly fetch manifest http-call@5.3.0
+66 http fetch GET 200 https://registry.npmjs.org/term-img 380ms (cache miss)
+67 silly fetch manifest sparkline@^0.2.0
+68 http fetch GET 200 https://registry.npmjs.org/commander 527ms (cache updated)
+69 silly fetch manifest true-myth@2.2.3
+70 http fetch GET 200 https://registry.npmjs.org/http-call 366ms (cache miss)
+71 silly fetch manifest tsheredoc@^1.0.1
+72 http fetch GET 200 https://registry.npmjs.org/sparkline 611ms (cache miss)
+73 silly fetch manifest valid-url@^1.0.9
+74 http fetch GET 200 https://registry.npmjs.org/true-myth 374ms (cache miss)
+75 silly fetch manifest validator@^13.7.0
+76 http fetch GET 200 https://registry.npmjs.org/tsheredoc 717ms (cache miss)
+77 silly fetch manifest word-wrap@^1.2.5
+78 http fetch GET 200 https://registry.npmjs.org/valid-url 418ms (cache miss)
+79 silly fetch manifest async-file@^2.0.2
+80 http fetch GET 200 https://registry.npmjs.org/validator 500ms (cache miss)
+81 silly fetch manifest node-fetch@^2.6.7
+82 http fetch GET 200 https://registry.npmjs.org/word-wrap 534ms (cache revalidated)
+83 silly fetch manifest portfinder@^1.0.32
+84 http fetch GET 200 https://registry.npmjs.org/node-fetch 423ms (cache miss)
+85 silly fetch manifest strip-ansi@^6
+86 http fetch GET 200 https://registry.npmjs.org/async-file 666ms (cache miss)
+87 silly fetch manifest tunnel-ssh@4.1.6
+88 http fetch GET 200 https://registry.npmjs.org/portfinder 366ms (cache miss)
+89 silly fetch manifest @oclif/core@^2.16.0
+90 http fetch GET 200 https://registry.npmjs.org/strip-ansi 487ms (cache revalidated)
+91 silly fetch manifest edit-string@^1.1.6
+92 http fetch GET 200 https://registry.npmjs.org/tunnel-ssh 642ms (cache miss)
+93 silly fetch manifest shell-quote@^1.8.1
+94 http fetch GET 200 https://registry.npmjs.org/edit-string 634ms (cache miss)
+95 silly fetch manifest ansi-escapes@3.2.0
+96 http fetch GET 200 https://registry.npmjs.org/@oclif%2fcore 812ms (cache miss)
+97 silly fetch manifest netrc-parser@3.1.6
+98 http fetch GET 200 https://registry.npmjs.org/shell-quote 463ms (cache revalidated)
+99 silly fetch manifest redis-parser@^3.0.0
+100 http fetch GET 200 https://registry.npmjs.org/redis-parser 358ms (cache miss)
+101 silly fetch manifest shell-escape@^0.2.0
+102 http fetch GET 200 https://registry.npmjs.org/netrc-parser 379ms (cache miss)
+103 silly fetch manifest stdout-stderr@^0.1.13
+104 http fetch GET 200 https://registry.npmjs.org/ansi-escapes 478ms (cache revalidated)
+105 silly fetch manifest @types/js-yaml@^3.12.5
+106 http fetch GET 200 https://registry.npmjs.org/@types%2fjs-yaml 458ms (cache miss)
+107 silly fetch manifest smooth-progress@^1.1.0
+108 http fetch GET 200 https://registry.npmjs.org/stdout-stderr 672ms (cache miss)
+109 silly fetch manifest @heroku-cli/color@2.0.1
+110 http fetch GET 200 https://registry.npmjs.org/shell-escape 738ms (cache miss)
+111 silly fetch manifest @inquirer/prompts@^5.0.5
+112 http fetch GET 200 https://registry.npmjs.org/smooth-progress 347ms (cache miss)
+113 silly fetch manifest @types/tunnel-ssh@4.1.1
+114 http fetch GET 200 https://registry.npmjs.org/@heroku-cli%2fcolor 536ms (cache miss)
+115 silly fetch manifest @heroku-cli/schema@^1.0.25
+116 http fetch GET 200 https://registry.npmjs.org/@inquirer%2fprompts 493ms (cache miss)
+117 silly fetch manifest @oclif/plugin-help@^5
+118 http fetch GET 200 https://registry.npmjs.org/@oclif%2fplugin-help 490ms (cache miss)
+119 silly fetch manifest @opentelemetry/api@^1.4.1
+120 http fetch GET 200 https://registry.npmjs.org/@types%2ftunnel-ssh 957ms (cache miss)
+121 silly fetch manifest @heroku-cli/command@^11.3.1
+122 http fetch GET 200 https://registry.npmjs.org/@heroku-cli%2fschema 1042ms (cache miss)
+123 silly fetch manifest @heroku/eventsource@^1.0.7
+124 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fapi 537ms (cache miss)
+125 silly fetch manifest @oclif/plugin-which@2.2.8
+126 http fetch GET 200 https://registry.npmjs.org/@oclif%2fplugin-which 573ms (cache miss)
+127 silly fetch manifest @oclif/plugin-legacy@^1.3.0
+128 http fetch GET 200 https://registry.npmjs.org/@heroku%2feventsource 641ms (cache miss)
+129 silly fetch manifest @oclif/plugin-update@3.2.4
+130 http fetch GET 200 https://registry.npmjs.org/@heroku-cli%2fcommand 1103ms (cache miss)
+131 silly fetch manifest github-url-to-object@^4.0.4
+132 http fetch GET 200 https://registry.npmjs.org/github-url-to-object 359ms (cache miss)
+133 silly fetch manifest @oclif/plugin-plugins@2.4.3
+134 http fetch GET 200 https://registry.npmjs.org/@oclif%2fplugin-legacy 528ms (cache miss)
+135 silly fetch manifest @oclif/plugin-version@^1.2.1
+136 http fetch GET 200 https://registry.npmjs.org/@oclif%2fplugin-update 539ms (cache miss)
+137 silly fetch manifest @oclif/plugin-commands@2.2.28
+138 http fetch GET 200 https://registry.npmjs.org/@oclif%2fplugin-version 576ms (cache miss)
+139 silly fetch manifest @heroku/heroku-cli-util@^8.0.13
+140 http fetch GET 200 https://registry.npmjs.org/@oclif%2fplugin-commands 812ms (cache miss)
+141 silly fetch manifest @oclif/plugin-not-found@2.3.16
+142 http fetch GET 200 https://registry.npmjs.org/@oclif%2fplugin-plugins 1155ms (cache miss)
+143 silly fetch manifest @opentelemetry/resources@^1.15.1
+144 http fetch GET 200 https://registry.npmjs.org/@oclif%2fplugin-not-found 645ms (cache miss)
+145 silly fetch manifest @heroku-cli/notifications@^1.2.4
+146 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fresources 540ms (cache miss)
+147 silly fetch manifest @heroku-cli/plugin-ps-exec@^2.4.0
+148 http fetch GET 200 https://registry.npmjs.org/@heroku%2fheroku-cli-util 1046ms (cache miss)
+149 silly fetch manifest @heroku/buildpack-registry@^1.0.1
+150 http fetch GET 200 https://registry.npmjs.org/@heroku-cli%2fnotifications 1058ms (cache miss)
+151 silly fetch manifest @opentelemetry/sdk-trace-base@^1.15.1
+152 http fetch GET 200 https://registry.npmjs.org/@heroku%2fbuildpack-registry 986ms (cache miss)
+153 silly fetch manifest @opentelemetry/sdk-trace-node@^1.15.1
+154 http fetch GET 200 https://registry.npmjs.org/@heroku-cli%2fplugin-ps-exec 1059ms (cache miss)
+155 silly fetch manifest @opentelemetry/instrumentation@^0.51.1
+156 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fsdk-trace-node 467ms (cache miss)
+157 silly fetch manifest @opentelemetry/semantic-conventions@^1.24.1
+158 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fsdk-trace-base 516ms (cache miss)
+159 silly fetch manifest @oclif/plugin-warn-if-update-available@2.0.29
+160 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2finstrumentation 534ms (cache miss)
+161 silly fetch manifest @opentelemetry/exporter-trace-otlp-http@^0.41.1
+162 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fsemantic-conventions 538ms (cache miss)
+163 http fetch GET 200 https://registry.npmjs.org/@oclif%2fplugin-warn-if-update-available 549ms (cache miss)
+164 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fexporter-trace-otlp-http 493ms (cache miss)
+165 silly fetch manifest encoding@^0.1.0
+166 http fetch GET 200 https://registry.npmjs.org/encoding 415ms (cache miss)
+167 silly placeDep node_modules/heroku @heroku-cli/color@2.0.1 OK for: heroku@9.3.2 want: 2.0.1
+168 silly placeDep node_modules/heroku @heroku-cli/command@11.3.2 OK for: heroku@9.3.2 want: ^11.3.1
+169 silly placeDep node_modules/heroku @heroku-cli/notifications@1.2.4 OK for: heroku@9.3.2 want: ^1.2.4
+170 silly placeDep node_modules/heroku @heroku-cli/plugin-ps-exec@2.5.0 OK for: heroku@9.3.2 want: ^2.4.0
+171 silly placeDep node_modules/heroku @heroku-cli/schema@1.0.25 OK for: heroku@9.3.2 want: ^1.0.25
+172 silly placeDep node_modules/heroku @heroku/buildpack-registry@1.0.1 OK for: heroku@9.3.2 want: ^1.0.1
+173 silly placeDep node_modules/heroku @heroku/eventsource@1.0.7 OK for: heroku@9.3.2 want: ^1.0.7
+174 silly placeDep node_modules/heroku @heroku/heroku-cli-util@8.0.15 OK for: heroku@9.3.2 want: ^8.0.13
+175 silly placeDep node_modules/heroku @inquirer/prompts@5.5.0 OK for: heroku@9.3.2 want: ^5.0.5
+176 silly placeDep node_modules/heroku @oclif/core@2.16.0 OK for: heroku@9.3.2 want: ^2.16.0
+177 silly placeDep node_modules/heroku @oclif/plugin-commands@2.2.28 OK for: heroku@9.3.2 want: 2.2.28
+178 silly placeDep node_modules/heroku @oclif/plugin-help@5.2.20 OK for: heroku@9.3.2 want: ^5
+179 silly placeDep node_modules/heroku @oclif/plugin-legacy@1.3.6 OK for: heroku@9.3.2 want: ^1.3.0
+180 silly placeDep node_modules/heroku @oclif/plugin-not-found@2.3.16 OK for: heroku@9.3.2 want: 2.3.16
+181 silly placeDep node_modules/heroku @oclif/plugin-plugins@2.4.3 OK for: heroku@9.3.2 want: 2.4.3
+182 silly placeDep node_modules/heroku @oclif/plugin-update@3.2.4 OK for: heroku@9.3.2 want: 3.2.4
+183 silly placeDep node_modules/heroku @oclif/plugin-version@1.3.10 OK for: heroku@9.3.2 want: ^1.2.1
+184 silly placeDep node_modules/heroku @oclif/plugin-warn-if-update-available@2.0.29 OK for: heroku@9.3.2 want: 2.0.29
+185 silly placeDep node_modules/heroku @oclif/plugin-which@2.2.8 OK for: heroku@9.3.2 want: 2.2.8
+186 silly placeDep node_modules/heroku @opentelemetry/api@1.9.0 OK for: heroku@9.3.2 want: ^1.4.1
+187 silly placeDep node_modules/heroku @opentelemetry/exporter-trace-otlp-http@0.41.2 OK for: heroku@9.3.2 want: ^0.41.1
+188 silly placeDep node_modules/heroku @opentelemetry/instrumentation@0.51.1 OK for: heroku@9.3.2 want: ^0.51.1
+189 silly placeDep node_modules/heroku @opentelemetry/resources@1.27.0 OK for: heroku@9.3.2 want: ^1.15.1
+190 silly placeDep node_modules/heroku @opentelemetry/sdk-trace-base@1.27.0 OK for: heroku@9.3.2 want: ^1.15.1
+191 silly placeDep node_modules/heroku @opentelemetry/sdk-trace-node@1.27.0 OK for: heroku@9.3.2 want: ^1.15.1
+192 silly placeDep node_modules/heroku @opentelemetry/semantic-conventions@1.27.0 OK for: heroku@9.3.2 want: ^1.24.1
+193 silly placeDep node_modules/heroku @types/js-yaml@3.12.10 OK for: heroku@9.3.2 want: ^3.12.5
+194 silly placeDep node_modules/heroku @types/tunnel-ssh@4.1.1 OK for: heroku@9.3.2 want: 4.1.1
+195 silly placeDep node_modules/heroku ansi-escapes@3.2.0 OK for: heroku@9.3.2 want: 3.2.0
+196 silly placeDep node_modules/heroku async-file@2.0.2 OK for: heroku@9.3.2 want: ^2.0.2
+197 silly placeDep node_modules/heroku bytes@3.1.2 OK for: heroku@9.3.2 want: ^3.1.2
+198 silly placeDep node_modules/heroku chalk@2.4.2 OK for: heroku@9.3.2 want: ^2.4.2
+199 silly placeDep node_modules/heroku commander@2.20.3 OK for: heroku@9.3.2 want: ^2.15.1
+200 silly placeDep node_modules/heroku date-fns@2.30.0 OK for: heroku@9.3.2 want: ^2.30.0
+201 silly placeDep node_modules/heroku debug@4.3.4 OK for: heroku@9.3.2 want: 4.3.4
+202 silly placeDep node_modules/heroku edit-string@1.1.6 OK for: heroku@9.3.2 want: ^1.1.6
+203 silly placeDep node_modules/heroku execa@5.1.1 OK for: heroku@9.3.2 want: 5.1.1
+204 silly placeDep node_modules/heroku filesize@10.1.6 OK for: heroku@9.3.2 want: ^10.1.2
+205 silly placeDep node_modules/heroku foreman@3.0.1 OK for: heroku@9.3.2 want: ^3.0.1
+206 silly placeDep node_modules/heroku fs-extra@9.1.0 OK for: heroku@9.3.2 want: ^9.1
+207 silly placeDep node_modules/heroku github-url-to-object@4.0.6 OK for: heroku@9.3.2 want: ^4.0.4
+208 silly placeDep node_modules/heroku glob@10.4.5 OK for: heroku@9.3.2 want: ^10.3.10
+209 silly placeDep node_modules/heroku got@11.8.6 OK for: heroku@9.3.2 want: ^11.8.6
+210 silly placeDep node_modules/heroku http-call@5.3.0 OK for: heroku@9.3.2 want: 5.3.0
+211 silly placeDep node_modules/heroku inquirer@8.2.6 OK for: heroku@9.3.2 want: ^8.2.6
+212 silly placeDep node_modules/heroku lodash@4.17.21 OK for: heroku@9.3.2 want: ^4.17.21
+213 silly placeDep node_modules/heroku netrc-parser@3.1.6 OK for: heroku@9.3.2 want: 3.1.6
+214 silly placeDep node_modules/heroku node-fetch@2.7.0 OK for: heroku@9.3.2 want: ^2.6.7
+215 silly placeDep node_modules/heroku open@8.4.2 OK for: heroku@9.3.2 want: ^8.4.2
+216 silly placeDep node_modules/heroku phoenix@1.7.14 OK for: heroku@9.3.2 want: ^1.6.14
+217 silly placeDep node_modules/heroku portfinder@1.0.32 OK for: heroku@9.3.2 want: ^1.0.32
+218 silly placeDep node_modules/heroku printf@0.6.1 OK for: heroku@9.3.2 want: 0.6.1
+219 silly placeDep node_modules/heroku psl@1.9.0 OK for: heroku@9.3.2 want: ^1.9.0
+220 silly placeDep node_modules/heroku redis-parser@3.0.0 OK for: heroku@9.3.2 want: ^3.0.0
+221 silly placeDep node_modules/heroku rollbar@2.26.4 OK for: heroku@9.3.2 want: ^2.26.2
+222 silly placeDep node_modules/heroku semver@7.6.0 OK for: heroku@9.3.2 want: 7.6.0
+223 silly placeDep node_modules/heroku shell-escape@0.2.0 OK for: heroku@9.3.2 want: ^0.2.0
+224 silly placeDep node_modules/heroku shell-quote@1.8.1 OK for: heroku@9.3.2 want: ^1.8.1
+225 silly placeDep node_modules/heroku smooth-progress@1.1.0 OK for: heroku@9.3.2 want: ^1.1.0
+226 silly placeDep node_modules/heroku sparkline@0.2.0 OK for: heroku@9.3.2 want: ^0.2.0
+227 silly placeDep node_modules/heroku ssh2@1.16.0 OK for: heroku@9.3.2 want: ^1.15.0
+228 silly placeDep node_modules/heroku stdout-stderr@0.1.13 OK for: heroku@9.3.2 want: ^0.1.13
+229 silly placeDep node_modules/heroku strftime@0.10.3 OK for: heroku@9.3.2 want: ^0.10.0
+230 silly placeDep node_modules/heroku strip-ansi@6.0.1 OK for: heroku@9.3.2 want: ^6
+231 silly placeDep node_modules/heroku term-img@4.1.0 OK for: heroku@9.3.2 want: ^4.1.0
+232 silly placeDep node_modules/heroku true-myth@2.2.3 OK for: heroku@9.3.2 want: 2.2.3
+233 silly placeDep node_modules/heroku tsheredoc@1.0.1 OK for: heroku@9.3.2 want: ^1.0.1
+234 silly placeDep node_modules/heroku tslib@1.14.1 OK for: heroku@9.3.2 want: 1.14.1
+235 silly placeDep node_modules/heroku tunnel-ssh@4.1.6 OK for: heroku@9.3.2 want: 4.1.6
+236 silly placeDep node_modules/heroku urijs@1.19.11 OK for: heroku@9.3.2 want: ^1.19.11
+237 silly placeDep node_modules/heroku valid-url@1.0.9 OK for: heroku@9.3.2 want: ^1.0.9
+238 silly placeDep node_modules/heroku validator@13.12.0 OK for: heroku@9.3.2 want: ^13.7.0
+239 silly placeDep node_modules/heroku word-wrap@1.2.5 OK for: heroku@9.3.2 want: ^1.2.5
+240 silly placeDep node_modules/heroku ws@6.2.3 OK for: heroku@9.3.2 want: ^6.2.2
+241 silly fetch manifest chalk@^4.1.2
+242 silly fetch manifest tslib@^1.9.3
+243 silly fetch manifest ansi-styles@^4.3.0
+244 silly fetch manifest supports-color@^7.2.0
+245 silly fetch manifest uuid@^8.3.0
+246 http fetch GET 200 https://registry.npmjs.org/uuid 430ms (cache updated)
+247 silly fetch manifest debug@^4.3.4
+248 silly fetch manifest cli-ux@^6.0.9
+249 http fetch GET 200 https://registry.npmjs.org/supports-color 452ms (cache revalidated)
+250 silly fetch manifest fs-extra@^9.1.0
+251 silly fetch manifest http-call@^5.3.0
+252 silly fetch manifest netrc-parser@^3.1.6
+253 silly fetch manifest yargs-parser@^18.1.3
+254 http fetch GET 200 https://registry.npmjs.org/ansi-styles 575ms (cache revalidated)
+255 silly fetch manifest heroku-client@^3.1.0
+256 http fetch GET 200 https://registry.npmjs.org/cli-ux 386ms (cache miss)
+257 silly fetch manifest yargs-unparser@^2.0.0
+258 http fetch GET 200 https://registry.npmjs.org/yargs-parser 518ms (cache revalidated)
+259 silly fetch manifest node-notifier@^8.0.1
+260 http fetch GET 200 https://registry.npmjs.org/heroku-client 668ms (cache miss)
+261 silly fetch manifest @heroku-cli/heroku-exec-util@0.8.2
+262 http fetch GET 200 https://registry.npmjs.org/yargs-unparser 409ms (cache miss)
+263 silly fetch manifest true-myth@^2.0.0
+264 silly fetch manifest node-fetch@^2.2.0
+265 silly fetch manifest original@^1.0.0
+266 http fetch GET 200 https://registry.npmjs.org/node-notifier 572ms (cache revalidated)
+267 silly fetch manifest opn@^3.0.3
+268 http fetch GET 200 https://registry.npmjs.org/original 345ms (cache miss)
+269 silly fetch manifest chalk@^2.4.1
+270 silly fetch manifest tslib@^1.9.0
+271 silly fetch manifest lodash@^4.17.10
+272 silly fetch manifest cardinal@^2.0.1
+273 http fetch GET 200 https://registry.npmjs.org/opn 371ms (cache miss)
+274 silly fetch manifest strip-ansi@^4.0.0
+275 silly fetch manifest ansi-styles@^3.2.1
+276 silly fetch manifest ansi-escapes@^3.1.0
+277 silly fetch manifest netrc-parser@^3.1.4
+278 silly fetch manifest tunnel-agent@^0.6.0
+279 http fetch GET 200 https://registry.npmjs.org/cardinal 343ms (cache miss)
+280 silly fetch manifest supports-color@^9.4.0
+281 silly fetch manifest @heroku-cli/color@^1.1.3
+282 silly fetch manifest @inquirer/input@^2.3.0
+283 http fetch GET 200 https://registry.npmjs.org/@heroku-cli%2fheroku-exec-util 928ms (cache miss)
+284 silly fetch manifest @inquirer/editor@^2.2.0
+285 http fetch GET 200 https://registry.npmjs.org/tunnel-agent 364ms (cache miss)
+286 silly fetch manifest @inquirer/expand@^2.3.0
+287 http fetch GET 200 https://registry.npmjs.org/@inquirer%2finput 551ms (cache miss)
+288 silly fetch manifest @inquirer/number@^1.1.0
+289 http fetch GET 200 https://registry.npmjs.org/@inquirer%2feditor 473ms (cache miss)
+290 silly fetch manifest @inquirer/search@^1.1.0
+291 http fetch GET 200 https://registry.npmjs.org/@inquirer%2fexpand 472ms (cache miss)
+292 silly fetch manifest @inquirer/select@^2.5.0
+293 http fetch GET 200 https://registry.npmjs.org/@inquirer%2fnumber 455ms (cache miss)
+294 silly fetch manifest @inquirer/confirm@^3.2.0
+295 http fetch GET 200 https://registry.npmjs.org/@inquirer%2fsearch 449ms (cache miss)
+296 silly fetch manifest @inquirer/rawlist@^2.3.0
+297 http fetch GET 200 https://registry.npmjs.org/@inquirer%2fselect 509ms (cache miss)
+298 silly fetch manifest @inquirer/checkbox@^2.5.0
+299 http fetch GET 200 https://registry.npmjs.org/@inquirer%2fconfirm 478ms (cache miss)
+300 silly fetch manifest @inquirer/password@^2.2.0
+301 http fetch GET 200 https://registry.npmjs.org/@inquirer%2frawlist 482ms (cache miss)
+302 silly fetch manifest ejs@^3.1.8
+303 http fetch GET 200 https://registry.npmjs.org/@inquirer%2fcheckbox 566ms (cache miss)
+304 silly fetch manifest tslib@^2.5.0
+305 silly fetch manifest globby@^11.1.0
+306 http fetch GET 200 https://registry.npmjs.org/@inquirer%2fpassword 469ms (cache miss)
+307 silly fetch manifest is-wsl@^2.2.0
+308 http fetch GET 200 https://registry.npmjs.org/ejs 548ms (cache revalidated)
+309 silly fetch manifest js-yaml@^3.14.1
+310 http fetch GET 200 https://registry.npmjs.org/globby 495ms (cache revalidated)
+311 silly fetch manifest ts-node@^10.9.1
+312 http fetch GET 200 https://registry.npmjs.org/is-wsl 439ms (cache revalidated)
+313 silly fetch manifest cardinal@^2.1.1
+314 silly fetch manifest wordwrap@^1.0.0
+315 http fetch GET 200 https://registry.npmjs.org/js-yaml 422ms (cache revalidated)
+316 silly fetch manifest wrap-ansi@^7.0.0
+317 http fetch GET 200 https://registry.npmjs.org/wordwrap 338ms (cache miss)
+318 silly fetch manifest slice-ansi@^4.0.0
+319 http fetch GET 200 https://registry.npmjs.org/ts-node 448ms (cache updated)
+320 silly fetch manifest strip-ansi@^6.0.1
+321 silly fetch manifest clean-stack@^3.0.1
+322 http fetch GET 200 https://registry.npmjs.org/wrap-ansi 386ms (cache revalidated)
+323 silly fetch manifest hyperlinker@^1.0.0
+324 http fetch GET 200 https://registry.npmjs.org/slice-ansi 314ms (cache miss)
+325 silly fetch manifest widest-line@^3.1.0
+326 http fetch GET 200 https://registry.npmjs.org/clean-stack 368ms (cache miss)
+327 silly fetch manifest ansi-escapes@^4.3.2
+328 silly fetch manifest cli-progress@^3.12.0
+329 http fetch GET 200 https://registry.npmjs.org/hyperlinker 331ms (cache miss)
+330 silly fetch manifest string-width@^4.2.3
+331 http fetch GET 200 https://registry.npmjs.org/widest-line 313ms (cache miss)
+332 silly fetch manifest indent-string@^4.0.0
+333 http fetch GET 200 https://registry.npmjs.org/cli-progress 355ms (cache miss)
+334 silly fetch manifest object-treeify@^1.1.33
+335 http fetch GET 200 https://registry.npmjs.org/string-width 404ms (cache revalidated)
+336 silly fetch manifest supports-color@^8.1.1
+337 silly fetch manifest natural-orderby@^2.0.3
+338 http fetch GET 200 https://registry.npmjs.org/indent-string 422ms (cache revalidated)
+339 silly fetch manifest password-prompt@^1.1.2
+340 http fetch GET 200 https://registry.npmjs.org/object-treeify 429ms (cache miss)
+341 silly fetch manifest get-package-type@^0.1.0
+342 http fetch GET 200 https://registry.npmjs.org/natural-orderby 367ms (cache miss)
+343 silly fetch manifest @types/cli-progress@^3.11.0
+344 http fetch GET 200 https://registry.npmjs.org/password-prompt 334ms (cache miss)
+345 silly fetch manifest supports-hyperlinks@^2.2.0
+346 http fetch GET 200 https://registry.npmjs.org/@types%2fcli-progress 381ms (cache miss)
+347 silly fetch manifest lodash@^4.17.11
+348 silly fetch manifest debug@^4.3.3
+349 silly fetch manifest tslib@^2.0.0
+350 silly fetch manifest semver@^7.5.4
+351 silly fetch manifest @oclif/color@^0.1.2
+352 http fetch GET 200 https://registry.npmjs.org/get-package-type 469ms (cache revalidated)
+353 silly fetch manifest @oclif/command@1.8.36
+354 http fetch GET 200 https://registry.npmjs.org/supports-hyperlinks 561ms (cache updated)
+355 silly fetch manifest @heroku-cli/command@^8.5.0
+356 silly fetch manifest @oclif/core@^1.25.0
+357 silly fetch manifest @oclif/color@^1.0.3
+358 http fetch GET 200 https://registry.npmjs.org/@oclif%2fcommand 497ms (cache miss)
+359 silly fetch manifest fast-levenshtein@^3.0.0
+360 http fetch GET 200 https://registry.npmjs.org/@oclif%2fcolor 1010ms (cache miss)
+361 silly fetch manifest yarn@^1.22.18
+362 http fetch GET 200 https://registry.npmjs.org/fast-levenshtein 520ms (cache revalidated)
+363 silly fetch manifest tslib@^2.4.1
+364 silly fetch manifest semver@^7.3.8
+365 silly fetch manifest fs-extra@^9.0
+366 silly fetch manifest http-call@^5.2.2
+367 silly fetch manifest @oclif/color@^1.0.4
+368 silly fetch manifest npm-run-path@^4.0.1
+369 http fetch GET 200 https://registry.npmjs.org/@oclif%2fcolor 1037ms (cache miss)
+370 silly fetch manifest load-json-file@^5.3.0
+371 http fetch GET 200 https://registry.npmjs.org/npm-run-path 388ms (cache updated)
+372 silly fetch manifest chalk@^4
+373 silly fetch manifest debug@^4.3.1
+374 silly fetch manifest tar-fs@^2.1.1
+375 http fetch GET 200 https://registry.npmjs.org/yarn 445ms (cache miss)
+376 silly fetch manifest filesize@^6.1.0
+377 silly fetch manifest fs-extra@^9.0.1
+378 silly fetch manifest cross-spawn@^7.0.3
+379 http fetch GET 200 https://registry.npmjs.org/load-json-file 360ms (cache miss)
+380 silly fetch manifest log-chopper@^1.0.2
+381 http fetch GET 200 https://registry.npmjs.org/tar-fs 442ms (cache miss)
+382 silly fetch manifest lodash.throttle@^4.1.1
+383 http fetch GET 200 https://registry.npmjs.org/cross-spawn 460ms (cache revalidated)
+384 silly fetch manifest chalk@^4.1.0
+385 silly fetch manifest debug@^4.1.0
+386 silly fetch manifest @opentelemetry/core@1.15.2
+387 http fetch GET 200 https://registry.npmjs.org/log-chopper 344ms (cache miss)
+388 silly fetch manifest @opentelemetry/resources@1.15.2
+389 silly fetch manifest @opentelemetry/sdk-trace-base@1.15.2
+390 silly fetch manifest @opentelemetry/otlp-transformer@0.41.2
+391 http fetch GET 200 https://registry.npmjs.org/lodash.throttle 340ms (cache miss)
+392 silly fetch manifest @opentelemetry/otlp-exporter-base@0.41.2
+393 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fcore 452ms (cache miss)
+394 silly fetch manifest semver@^7.5.2
+395 silly fetch manifest shimmer@^1.2.1
+396 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fotlp-transformer 497ms (cache miss)
+397 silly fetch manifest @types/shimmer@^1.0.2
+398 http fetch GET 200 https://registry.npmjs.org/shimmer 402ms (cache miss)
+399 silly fetch manifest import-in-the-middle@1.7.4
+400 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fotlp-exporter-base 594ms (cache miss)
+401 silly fetch manifest require-in-the-middle@^7.1.1
+402 http fetch GET 200 https://registry.npmjs.org/@types%2fshimmer 402ms (cache miss)
+403 silly fetch manifest @opentelemetry/api-logs@0.51.1
+404 http fetch GET 200 https://registry.npmjs.org/require-in-the-middle 390ms (cache miss)
+405 silly fetch manifest @opentelemetry/core@1.27.0
+406 silly fetch manifest @opentelemetry/semantic-conventions@1.27.0
+407 silly fetch manifest @opentelemetry/context-async-hooks@1.27.0
+408 http fetch GET 200 https://registry.npmjs.org/import-in-the-middle 451ms (cache miss)
+409 silly fetch manifest @opentelemetry/propagator-b3@1.27.0
+410 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fapi-logs 436ms (cache miss)
+411 silly fetch manifest @opentelemetry/propagator-jaeger@1.27.0
+412 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fcontext-async-hooks 512ms (cache miss)
+413 silly fetch manifest @types/node@*
+414 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fpropagator-b3 504ms (cache miss)
+415 silly fetch manifest rimraf@^2.5.2
+416 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fpropagator-jaeger 494ms (cache miss)
+417 silly fetch manifest supports-color@^5.3.0
+418 silly fetch manifest escape-string-regexp@^1.0.5
+419 http fetch GET 200 https://registry.npmjs.org/rimraf 513ms (cache updated)
+420 silly fetch manifest @babel/runtime@^7.21.0
+421 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 490ms (cache revalidated)
+422 silly fetch manifest ms@2.1.2
+423 http fetch GET 200 https://registry.npmjs.org/ms 441ms (cache revalidated)
+424 silly fetch manifest debug@^3.1.0
+425 silly fetch manifest execa@^0.10.0
+426 silly fetch manifest tmp@^0.0.33
+427 http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 751ms (cache updated)
+428 silly fetch manifest onetime@^5.1.2
+429 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 1361ms (cache updated)
+430 silly fetch manifest is-stream@^2.0.0
+431 http fetch GET 200 https://registry.npmjs.org/tmp 582ms (cache revalidated)
+432 silly fetch manifest get-stream@^6.0.0
+433 http fetch GET 200 https://registry.npmjs.org/onetime 600ms (cache revalidated)
+434 silly fetch manifest signal-exit@^3.0.3
+435 http fetch GET 200 https://registry.npmjs.org/is-stream 440ms (cache revalidated)
+436 silly fetch manifest merge-stream@^2.0.0
+437 http fetch GET 200 https://registry.npmjs.org/get-stream 431ms (cache revalidated)
+438 silly fetch manifest human-signals@^2.1.0
+439 http fetch GET 200 https://registry.npmjs.org/signal-exit 408ms (cache revalidated)
+440 silly fetch manifest strip-final-newline@^2.0.0
+441 http fetch GET 200 https://registry.npmjs.org/merge-stream 429ms (cache updated)
+442 silly fetch manifest mustache@^2.2.1
+443 http fetch GET 200 https://registry.npmjs.org/human-signals 574ms (cache updated)
+444 silly fetch manifest http-proxy@^1.17.0
+445 http fetch GET 200 https://registry.npmjs.org/strip-final-newline 470ms (cache revalidated)
+446 silly fetch manifest shell-quote@^1.6.1
+447 silly fetch manifest jsonfile@^6.0.1
+448 http fetch GET 200 https://registry.npmjs.org/mustache 436ms (cache miss)
+449 silly fetch manifest graceful-fs@^4.2.0
+450 http fetch GET 200 https://registry.npmjs.org/http-proxy 582ms (cache revalidated)
+451 silly fetch manifest universalify@^2.0.0
+452 http fetch GET 200 https://registry.npmjs.org/jsonfile 385ms (cache updated)
+453 silly fetch manifest at-least-node@^1.0.0
+454 http fetch GET 200 https://registry.npmjs.org/graceful-fs 479ms (cache revalidated)
+455 silly fetch manifest is-url@^1.1.0
+456 http fetch GET 200 https://registry.npmjs.org/is-url 392ms (cache miss)
+457 silly fetch manifest minipass@^7.1.2
+458 http fetch GET 200 https://registry.npmjs.org/universalify 678ms (cache revalidated)
+459 silly fetch manifest jackspeak@^3.1.2
+460 http fetch GET 200 https://registry.npmjs.org/at-least-node 711ms (cache revalidated)
+461 silly fetch manifest minimatch@^9.0.4
+462 http fetch GET 200 https://registry.npmjs.org/minipass 579ms (cache revalidated)
+463 silly fetch manifest path-scurry@^1.11.1
+464 http fetch GET 200 https://registry.npmjs.org/jackspeak 424ms (cache updated)
+465 silly fetch manifest foreground-child@^3.1.0
+466 http fetch GET 200 https://registry.npmjs.org/minimatch 444ms (cache revalidated)
+467 silly fetch manifest package-json-from-dist@^1.0.0
+468 http fetch GET 200 https://registry.npmjs.org/foreground-child 381ms (cache updated)
+469 silly fetch manifest p-cancelable@^2.0.0
+470 http fetch GET 200 https://registry.npmjs.org/path-scurry 418ms (cache revalidated)
+471 silly fetch manifest responselike@^2.0.0
+472 http fetch GET 200 https://registry.npmjs.org/package-json-from-dist 377ms (cache updated)
+473 silly fetch manifest http2-wrapper@^1.0.0-beta.5.2
+474 http fetch GET 200 https://registry.npmjs.org/p-cancelable 312ms (cache miss)
+475 silly fetch manifest lowercase-keys@^2.0.0
+476 http fetch GET 200 https://registry.npmjs.org/responselike 322ms (cache miss)
+477 silly fetch manifest @sindresorhus/is@^4.0.0
+478 http fetch GET 200 https://registry.npmjs.org/http2-wrapper 344ms (cache miss)
+479 silly fetch manifest cacheable-lookup@^5.0.3
+480 http fetch GET 200 https://registry.npmjs.org/lowercase-keys 308ms (cache miss)
+481 silly fetch manifest cacheable-request@^7.0.2
+482 http fetch GET 200 https://registry.npmjs.org/@sindresorhus%2fis 378ms (cache miss)
+483 silly fetch manifest @types/responselike@^1.0.0
+484 http fetch GET 200 https://registry.npmjs.org/cacheable-lookup 342ms (cache miss)
+485 silly fetch manifest decompress-response@^6.0.0
+486 http fetch GET 200 https://registry.npmjs.org/cacheable-request 323ms (cache miss)
+487 silly fetch manifest @szmarczak/http-timer@^4.0.5
+488 http fetch GET 200 https://registry.npmjs.org/decompress-response 440ms (cache miss)
+489 silly fetch manifest @types/cacheable-request@^6.0.1
+490 http fetch GET 200 https://registry.npmjs.org/@types%2fresponselike 464ms (cache miss)
+491 silly fetch manifest parse-json@^4.0.0
+492 http fetch GET 200 https://registry.npmjs.org/@szmarczak%2fhttp-timer 382ms (cache miss)
+493 silly fetch manifest content-type@^1.0.4
+494 http fetch GET 200 https://registry.npmjs.org/parse-json 391ms (cache revalidated)
+495 silly fetch manifest is-retry-allowed@^1.1.0
+496 http fetch GET 200 https://registry.npmjs.org/@types%2fcacheable-request 469ms (cache miss)
+497 silly fetch manifest ora@^5.4.1
+498 http fetch GET 200 https://registry.npmjs.org/content-type 428ms (cache updated)
+499 silly fetch manifest rxjs@^7.5.5
+500 http fetch GET 200 https://registry.npmjs.org/is-retry-allowed 315ms (cache miss)
+501 silly fetch manifest chalk@^4.1.1
+502 silly fetch manifest figures@^3.0.0
+503 http fetch GET 200 https://registry.npmjs.org/ora 360ms (cache miss)
+504 silly fetch manifest through@^2.3.6
+505 http fetch GET 200 https://registry.npmjs.org/figures 335ms (cache miss)
+506 silly fetch manifest cli-width@^3.0.0
+507 http fetch GET 200 https://registry.npmjs.org/through 397ms (cache miss)
+508 silly fetch manifest run-async@^2.4.0
+509 http fetch GET 200 https://registry.npmjs.org/rxjs 671ms (cache miss)
+510 silly fetch manifest wrap-ansi@^6.0.1
+511 silly fetch manifest cli-cursor@^3.1.0
+512 http fetch GET 200 https://registry.npmjs.org/cli-width 356ms (cache miss)
+513 silly fetch manifest strip-ansi@^6.0.0
+514 silly fetch manifest mute-stream@0.0.8
+515 http fetch GET 200 https://registry.npmjs.org/run-async 434ms (cache miss)
+516 silly fetch manifest ansi-escapes@^4.2.1
+517 silly fetch manifest string-width@^4.1.0
+518 silly fetch manifest external-editor@^3.0.3
+519 http fetch GET 200 https://registry.npmjs.org/cli-cursor 441ms (cache miss)
+520 silly fetch manifest whatwg-url@^5.0.0
+521 http fetch GET 200 https://registry.npmjs.org/mute-stream 337ms (cache miss)
+522 silly fetch manifest define-lazy-prop@^2.0.0
+523 http fetch GET 200 https://registry.npmjs.org/external-editor 354ms (cache miss)
+524 silly fetch manifest is-docker@^2.1.1
+525 http fetch GET 200 https://registry.npmjs.org/whatwg-url 427ms (cache revalidated)
+526 silly fetch manifest async@^2.6.4
+527 http fetch GET 200 https://registry.npmjs.org/define-lazy-prop 448ms (cache revalidated)
+528 silly fetch manifest debug@^3.2.7
+529 silly fetch manifest mkdirp@^0.5.6
+530 http fetch GET 200 https://registry.npmjs.org/is-docker 405ms (cache revalidated)
+531 silly fetch manifest redis-errors@^1.0.0
+532 http fetch GET 200 https://registry.npmjs.org/async 376ms (cache updated)
+533 silly fetch manifest async@~3.2.3
+534 silly fetch manifest console-polyfill@0.3.0
+535 http fetch GET 200 https://registry.npmjs.org/mkdirp 360ms (cache revalidated)
+536 silly fetch manifest error-stack-parser@^2.0.4
+537 http fetch GET 200 https://registry.npmjs.org/redis-errors 390ms (cache miss)
+538 silly fetch manifest json-stringify-safe@~5.0.0
+539 http fetch GET 200 https://registry.npmjs.org/console-polyfill 371ms (cache miss)
+540 silly fetch manifest lru-cache@~2.2.1
+541 http fetch GET 200 https://registry.npmjs.org/error-stack-parser 611ms (cache revalidated)
+542 silly fetch manifest request-ip@~3.3.0
+543 http fetch GET 200 https://registry.npmjs.org/json-stringify-safe 409ms (cache miss)
+544 silly fetch manifest source-map@^0.5.7
+545 http fetch GET 200 https://registry.npmjs.org/lru-cache 436ms (cache updated)
+546 silly fetch manifest decache@^3.0.5
+547 http fetch GET 200 https://registry.npmjs.org/source-map 998ms (cache revalidated)
+548 silly fetch manifest lru-cache@^6.0.0
+549 silly fetch manifest ansi-escapes@1.4.0
+550 silly fetch manifest chalk@^1.1.1
+551 silly fetch manifest nopt@~4.0.1
+552 http fetch GET 200 https://registry.npmjs.org/nopt 337ms (cache miss)
+553 silly fetch manifest here@0.0.2
+554 http fetch GET 200 https://registry.npmjs.org/decache 1742ms (cache miss)
+555 silly fetch manifest asn1@^0.2.6
+556 http fetch GET 200 https://registry.npmjs.org/here 593ms (cache miss)
+557 silly fetch manifest bcrypt-pbkdf@^1.0.2
+558 http fetch GET 200 https://registry.npmjs.org/bcrypt-pbkdf 348ms (cache miss)
+559 silly fetch manifest cpu-features@~0.0.10
+560 http fetch GET 200 https://registry.npmjs.org/asn1 597ms (cache miss)
+561 silly fetch manifest nan@^2.20.0
+562 http fetch GET 200 https://registry.npmjs.org/cpu-features 343ms (cache miss)
+563 silly fetch manifest ansi-regex@^5.0.1
+564 http fetch GET 200 https://registry.npmjs.org/request-ip 2851ms (cache miss)
+565 silly fetch manifest ansi-escapes@^4.1.0
+566 silly fetch manifest iterm2-version@^4.1.0
+567 http fetch GET 200 https://registry.npmjs.org/ansi-regex 341ms (cache updated)
+568 silly fetch manifest debug@2.6.9
+569 silly fetch manifest lodash.defaults@^4.1.0
+570 http fetch GET 200 https://registry.npmjs.org/lodash.defaults 330ms (cache miss)
+571 silly fetch manifest ssh2@1.4.0
+572 silly fetch manifest async-limiter@~1.0.0
+573 http fetch GET 200 https://registry.npmjs.org/iterm2-version 754ms (cache miss)
+574 http fetch GET 200 https://registry.npmjs.org/async-limiter 655ms (cache miss)
+575 http fetch GET 200 https://registry.npmjs.org/nan 1683ms (cache miss)
+576 silly placeDep node_modules/heroku ansi-styles@4.3.0 OK for: @heroku-cli/color@2.0.1 want: ^4.3.0
+577 silly placeDep node_modules/heroku/node_modules/@heroku-cli/color chalk@4.1.2 OK for: @heroku-cli/color@2.0.1 want: ^4.1.2
+578 silly placeDep node_modules/heroku supports-color@7.2.0 OK for: @heroku-cli/color@2.0.1 want: ^7.2.0
+579 silly fetch manifest color-convert@^2.0.1
+580 silly fetch manifest supports-color@^7.1.0
+581 silly fetch manifest has-flag@^4.0.0
+582 http fetch GET 200 https://registry.npmjs.org/has-flag 392ms (cache revalidated)
+583 http fetch GET 200 https://registry.npmjs.org/color-convert 433ms (cache revalidated)
+584 silly placeDep node_modules/heroku cli-ux@6.0.9 OK for: @heroku-cli/command@11.3.2 want: ^6.0.9
+585 silly placeDep node_modules/heroku heroku-client@3.1.0 OK for: @heroku-cli/command@11.3.2 want: ^3.1.0
+586 silly placeDep node_modules/heroku uuid@8.3.2 OK for: @heroku-cli/command@11.3.2 want: ^8.3.0
+587 silly placeDep node_modules/heroku yargs-parser@18.1.3 OK for: @heroku-cli/command@11.3.2 want: ^18.1.3
+588 silly placeDep node_modules/heroku yargs-unparser@2.0.0 OK for: @heroku-cli/command@11.3.2 want: ^2.0.0
+589 silly fetch manifest js-yaml@^3.13.1
+590 silly fetch manifest fs-extra@^8.1
+591 silly fetch manifest @oclif/core@^1.1.1
+592 silly fetch manifest clean-stack@^3.0.0
+593 silly fetch manifest ansi-escapes@^4.3.0
+594 silly fetch manifest cli-progress@^3.10.0
+595 silly fetch manifest string-width@^4.2.0
+596 silly fetch manifest @oclif/screen@^1.0.4 
+597 silly fetch manifest extract-stack@^2.0.0
+598 silly fetch manifest object-treeify@^1.1.4
+599 silly fetch manifest supports-color@^8.1.0
+600 silly fetch manifest @oclif/linewrap@^1.0.0
+601 http fetch GET 200 https://registry.npmjs.org/@oclif%2flinewrap 445ms (cache miss)
+602 silly fetch manifest natural-orderby@^2.0.1
+603 silly fetch manifest supports-hyperlinks@^2.1.0
+604 silly fetch manifest is-retry-allowed@^1.0.0
+605 silly fetch manifest camelcase@^5.0.0
+606 http fetch GET 200 https://registry.npmjs.org/extract-stack 565ms (cache miss)
+607 silly fetch manifest decamelize@^1.2.0
+608 http fetch GET 200 https://registry.npmjs.org/camelcase 428ms (cache revalidated)
+609 silly fetch manifest camelcase@^6.0.0
+610 silly fetch manifest decamelize@^4.0.0
+611 http fetch GET 200 https://registry.npmjs.org/@oclif%2fscreen 1260ms (cache miss)
+612 silly fetch manifest flat@^5.0.2
+613 http fetch GET 200 https://registry.npmjs.org/decamelize 369ms (cache miss)
+614 silly fetch manifest is-plain-obj@^2.1.0
+615 http fetch GET 200 https://registry.npmjs.org/decamelize 902ms (cache miss)
+616 http fetch GET 200 https://registry.npmjs.org/flat 384ms (cache miss)
+617 http fetch GET 200 https://registry.npmjs.org/is-plain-obj 420ms (cache revalidated)
+618 silly placeDep node_modules/heroku node-notifier@8.0.2 OK for: @heroku-cli/notifications@1.2.4 want: ^8.0.1
+619 silly fetch manifest growly@^1.3.0
+620 silly fetch manifest shellwords@^0.1.1
+621 silly fetch manifest which@^2.0.2
+622 http fetch GET 200 https://registry.npmjs.org/shellwords 456ms (cache miss)
+623 http fetch GET 200 https://registry.npmjs.org/growly 570ms (cache miss)
+624 http fetch GET 200 https://registry.npmjs.org/which 799ms (cache updated)
+625 silly placeDep node_modules/heroku @heroku-cli/heroku-exec-util@0.8.2 OK for: @heroku-cli/plugin-ps-exec@2.5.0 want: 0.8.2
+626 silly fetch manifest co@4.6.0
+627 silly fetch manifest temp@0.9.1
+628 silly fetch manifest co-wait@0.0.0
+629 http fetch GET 200 https://registry.npmjs.org/temp 399ms (cache miss)
+630 silly fetch manifest keypair@1.0.4
+631 http fetch GET 200 https://registry.npmjs.org/co 494ms (cache revalidated)
+632 silly fetch manifest node-forge@1.3.0
+633 http fetch GET 200 https://registry.npmjs.org/co-wait 952ms (cache miss)
+634 silly fetch manifest @heroku/socksv5@^0.0.9
+635 http fetch GET 200 https://registry.npmjs.org/keypair 557ms (cache miss)
+636 http fetch GET 200 https://registry.npmjs.org/node-forge 536ms (cache revalidated)
+637 http fetch GET 200 https://registry.npmjs.org/@heroku%2fsocksv5 1299ms (cache miss)
+638 silly placeDep node_modules/heroku @heroku/socksv5@0.0.9 OK for: @heroku-cli/heroku-exec-util@0.8.2 want: ^0.0.9
+639 silly placeDep node_modules/heroku co@4.6.0 OK for: @heroku-cli/heroku-exec-util@0.8.2 want: 4.6.0
+640 silly placeDep node_modules/heroku co-wait@0.0.0 OK for: @heroku-cli/heroku-exec-util@0.8.2 want: 0.0.0
+641 silly placeDep node_modules/heroku keypair@1.0.4 OK for: @heroku-cli/heroku-exec-util@0.8.2 want: 1.0.4
+642 silly placeDep node_modules/heroku node-forge@1.3.0 OK for: @heroku-cli/heroku-exec-util@0.8.2 want: 1.3.0
+643 silly placeDep node_modules/heroku/node_modules/@heroku-cli/heroku-exec-util ssh2@1.4.0 OK for: @heroku-cli/heroku-exec-util@0.8.2 want: 1.4.0
+644 silly placeDep node_modules/heroku temp@0.9.1 OK for: @heroku-cli/heroku-exec-util@0.8.2 want: 0.9.1
+645 silly fetch manifest ip-address@^5.8.8
+646 silly fetch manifest asn1@^0.2.4
+647 silly fetch manifest nan@^2.15.0
+648 silly fetch manifest cpu-features@0.0.2
+649 silly fetch manifest rimraf@~2.6.2
+650 http fetch GET 200 https://registry.npmjs.org/ip-address 443ms (cache miss)
+651 silly placeDep node_modules/heroku original@1.0.2 OK for: @heroku/eventsource@1.0.7 want: ^1.0.0
+652 silly fetch manifest url-parse@^1.4.3
+653 http fetch GET 200 https://registry.npmjs.org/url-parse 554ms (cache revalidated)
+654 silly placeDep node_modules/heroku/node_modules/@heroku/heroku-cli-util @heroku-cli/color@1.1.16 OK for: @heroku/heroku-cli-util@8.0.15 want: ^1.1.3
+655 silly placeDep node_modules/heroku/node_modules/@heroku/heroku-cli-util ansi-styles@3.2.1 OK for: @heroku/heroku-cli-util@8.0.15 want: ^3.2.1
+656 silly placeDep node_modules/heroku cardinal@2.1.1 OK for: @heroku/heroku-cli-util@8.0.15 want: ^2.0.1
+657 silly placeDep node_modules/heroku opn@3.0.3 OK for: @heroku/heroku-cli-util@8.0.15 want: ^3.0.3
+658 silly placeDep node_modules/heroku/node_modules/@heroku/heroku-cli-util strip-ansi@4.0.0 OK for: @heroku/heroku-cli-util@8.0.15 want: ^4.0.0
+659 silly placeDep node_modules/heroku/node_modules/@heroku/heroku-cli-util supports-color@9.4.0 OK for: @heroku/heroku-cli-util@8.0.15 want: ^9.4.0
+660 silly placeDep node_modules/heroku tunnel-agent@0.6.0 OK for: @heroku/heroku-cli-util@8.0.15 want: ^0.6.0
+661 silly fetch manifest strip-ansi@^5.0.0
+662 silly fetch manifest supports-color@^5.5.0
+663 silly fetch manifest color-convert@^1.9.0
+664 silly fetch manifest ansicolors@~0.3.2
+665 silly fetch manifest redeyed@~2.1.0
+666 silly fetch manifest object-assign@^4.0.1
+667 http fetch GET 200 https://registry.npmjs.org/redeyed 384ms (cache miss)
+668 silly fetch manifest ansi-regex@^3.0.0
+669 silly fetch manifest safe-buffer@^5.0.1
+670 http fetch GET 200 https://registry.npmjs.org/object-assign 395ms (cache revalidated)
+671 http fetch GET 200 https://registry.npmjs.org/ansicolors 538ms (cache miss)
+672 http fetch GET 200 https://registry.npmjs.org/safe-buffer 383ms (cache revalidated)
+673 silly placeDep node_modules/heroku ip-address@5.9.4 OK for: @heroku/socksv5@0.0.9 want: ^5.8.8
+674 silly fetch manifest jsbn@1.1.0
+675 silly fetch manifest sprintf-js@1.1.2
+676 http fetch GET 200 https://registry.npmjs.org/jsbn 366ms (cache miss)
+677 http fetch GET 200 https://registry.npmjs.org/sprintf-js 753ms (cache updated)
+678 silly placeDep node_modules/heroku @inquirer/checkbox@2.5.0 OK for: @inquirer/prompts@5.5.0 want: ^2.5.0
+679 silly placeDep node_modules/heroku @inquirer/confirm@3.2.0 OK for: @inquirer/prompts@5.5.0 want: ^3.2.0
+680 silly placeDep node_modules/heroku @inquirer/editor@2.2.0 OK for: @inquirer/prompts@5.5.0 want: ^2.2.0
+681 silly placeDep node_modules/heroku @inquirer/expand@2.3.0 OK for: @inquirer/prompts@5.5.0 want: ^2.3.0
+682 silly placeDep node_modules/heroku @inquirer/input@2.3.0 OK for: @inquirer/prompts@5.5.0 want: ^2.3.0
+683 silly placeDep node_modules/heroku @inquirer/number@1.1.0 OK for: @inquirer/prompts@5.5.0 want: ^1.1.0
+684 silly placeDep node_modules/heroku @inquirer/password@2.2.0 OK for: @inquirer/prompts@5.5.0 want: ^2.2.0
+685 silly placeDep node_modules/heroku @inquirer/rawlist@2.3.0 OK for: @inquirer/prompts@5.5.0 want: ^2.3.0
+686 silly placeDep node_modules/heroku @inquirer/search@1.1.0 OK for: @inquirer/prompts@5.5.0 want: ^1.1.0
+687 silly placeDep node_modules/heroku @inquirer/select@2.5.0 OK for: @inquirer/prompts@5.5.0 want: ^2.5.0
+688 silly fetch manifest @inquirer/core@^9.1.0
+689 silly fetch manifest @inquirer/type@^1.5.3
+690 silly fetch manifest yoctocolors-cjs@^2.1.2
+691 http fetch GET 200 https://registry.npmjs.org/@inquirer%2ftype 412ms (cache miss)
+692 silly fetch manifest @inquirer/figures@^1.0.5
+693 http fetch GET 200 https://registry.npmjs.org/yoctocolors-cjs 587ms (cache miss)
+694 http fetch GET 200 https://registry.npmjs.org/@inquirer%2ffigures 472ms (cache miss)
+695 http fetch GET 200 https://registry.npmjs.org/@inquirer%2fcore 1490ms (cache miss)
+696 silly fetch manifest external-editor@^3.1.0
+697 silly placeDep node_modules/heroku @inquirer/core@9.2.1 OK for: @inquirer/checkbox@2.5.0 want: ^9.1.0
+698 silly placeDep node_modules/heroku @inquirer/figures@1.0.7 OK for: @inquirer/checkbox@2.5.0 want: ^1.0.5
+699 silly placeDep node_modules/heroku @inquirer/type@1.5.5 OK for: @inquirer/checkbox@2.5.0 want: ^1.5.3
+700 silly placeDep node_modules/heroku/node_modules/@inquirer/checkbox ansi-escapes@4.3.2 OK for: @inquirer/checkbox@2.5.0 want: ^4.3.2
+701 silly placeDep node_modules/heroku yoctocolors-cjs@2.1.2 OK for: @inquirer/checkbox@2.5.0 want: ^2.1.2
+702 silly fetch manifest cli-width@^4.1.0
+703 silly fetch manifest wrap-ansi@^6.2.0
+704 silly fetch manifest @types/node@^22.5.5
+705 silly fetch manifest mute-stream@^1.0.0
+706 silly fetch manifest signal-exit@^4.1.0
+707 silly fetch manifest @inquirer/type@^2.0.0
+708 silly fetch manifest @types/wrap-ansi@^3.0.0
+709 silly fetch manifest @inquirer/figures@^1.0.6
+710 silly fetch manifest @types/mute-stream@^0.0.4
+711 silly fetch manifest type-fest@^0.21.3
+712 http fetch GET 200 https://registry.npmjs.org/@types%2fmute-stream 397ms (cache miss)
+713 http fetch GET 200 https://registry.npmjs.org/@types%2fwrap-ansi 826ms (cache miss)
+714 http fetch GET 200 https://registry.npmjs.org/type-fest 2856ms (cache updated)
+715 silly placeDep node_modules/heroku/node_modules/@inquirer/core @inquirer/type@2.0.0 OK for: @inquirer/core@9.2.1 want: ^2.0.0
+716 silly placeDep node_modules/heroku @types/mute-stream@0.0.4 OK for: @inquirer/core@9.2.1 want: ^0.0.4
+717 silly placeDep node_modules/heroku @types/node@22.8.6 OK for: @inquirer/core@9.2.1 want: ^22.5.5
+718 silly placeDep node_modules/heroku @types/wrap-ansi@3.0.0 OK for: @inquirer/core@9.2.1 want: ^3.0.0
+719 silly placeDep node_modules/heroku/node_modules/@inquirer/core ansi-escapes@4.3.2 OK for: @inquirer/core@9.2.1 want: ^4.3.2
+720 silly placeDep node_modules/heroku cli-width@4.1.0 OK for: @inquirer/core@9.2.1 want: ^4.1.0
+721 silly placeDep node_modules/heroku mute-stream@1.0.0 OK for: @inquirer/core@9.2.1 want: ^1.0.0
+722 silly placeDep node_modules/heroku signal-exit@4.1.0 OK for: @inquirer/core@9.2.1 want: ^4.1.0
+723 silly placeDep node_modules/heroku wrap-ansi@6.2.0 OK for: @inquirer/core@9.2.1 want: ^6.2.0
+724 silly fetch manifest undici-types@~6.19.8
+725 http fetch GET 200 https://registry.npmjs.org/undici-types 565ms (cache updated)
+726 silly placeDep node_modules/heroku external-editor@3.1.0 OK for: @inquirer/editor@2.2.0 want: ^3.1.0
+727 silly fetch manifest chardet@^0.7.0
+728 silly fetch manifest iconv-lite@^0.4.24
+729 http fetch GET 200 https://registry.npmjs.org/iconv-lite 457ms (cache revalidated)
+730 http fetch GET 200 https://registry.npmjs.org/chardet 1461ms (cache miss)
+731 silly placeDep node_modules/heroku/node_modules/@inquirer/password ansi-escapes@4.3.2 OK for: @inquirer/password@2.2.0 want: ^4.3.2
+732 silly placeDep node_modules/heroku/node_modules/@inquirer/select ansi-escapes@4.3.2 OK for: @inquirer/select@2.5.0 want: ^4.3.2
+733 silly fetch manifest @swc/core@>=1.2.50
+734 http fetch GET 200 https://registry.npmjs.org/@swc%2fcore 687ms (cache updated)
+735 silly fetch manifest @swc/helpers@*
+736 http fetch GET 200 https://registry.npmjs.org/@swc%2fhelpers 1629ms (cache updated)
+737 silly fetch manifest @swc/wasm@>=1.2.50
+738 http fetch GET 200 https://registry.npmjs.org/@swc%2fwasm 8186ms (cache updated)
+739 silly fetch manifest typescript@>=2.7
+740 http fetch GET 200 https://registry.npmjs.org/typescript 1410ms (cache updated)
+741 silly placeDep node_modules/heroku @types/cli-progress@3.11.6 OK for: @oclif/core@2.16.0 want: ^3.11.0
+742 silly placeDep node_modules/heroku/node_modules/@oclif/core ansi-escapes@4.3.2 OK for: @oclif/core@2.16.0 want: ^4.3.2
+743 silly placeDep node_modules/heroku/node_modules/@oclif/core chalk@4.1.2 OK for: @oclif/core@2.16.0 want: ^4.1.2
+744 silly placeDep node_modules/heroku clean-stack@3.0.1 OK for: @oclif/core@2.16.0 want: ^3.0.1
+745 silly placeDep node_modules/heroku cli-progress@3.12.0 OK for: @oclif/core@2.16.0 want: ^3.12.0
+746 silly placeDep node_modules/heroku ejs@3.1.10 OK for: @oclif/core@2.16.0 want: ^3.1.8
+747 silly placeDep node_modules/heroku get-package-type@0.1.0 OK for: @oclif/core@2.16.0 want: ^0.1.0
+748 silly placeDep node_modules/heroku globby@11.1.0 OK for: @oclif/core@2.16.0 want: ^11.1.0
+749 silly placeDep node_modules/heroku hyperlinker@1.0.0 OK for: @oclif/core@2.16.0 want: ^1.0.0
+750 silly placeDep node_modules/heroku indent-string@4.0.0 OK for: @oclif/core@2.16.0 want: ^4.0.0
+751 silly placeDep node_modules/heroku is-wsl@2.2.0 OK for: @oclif/core@2.16.0 want: ^2.2.0
+752 silly placeDep node_modules/heroku js-yaml@3.14.1 OK for: @oclif/core@2.16.0 want: ^3.14.1
+753 silly placeDep node_modules/heroku natural-orderby@2.0.3 OK for: @oclif/core@2.16.0 want: ^2.0.3
+754 silly placeDep node_modules/heroku object-treeify@1.1.33 OK for: @oclif/core@2.16.0 want: ^1.1.33
+755 silly placeDep node_modules/heroku password-prompt@1.1.3 OK for: @oclif/core@2.16.0 want: ^1.1.2
+756 silly placeDep node_modules/heroku slice-ansi@4.0.0 OK for: @oclif/core@2.16.0 want: ^4.0.0
+757 silly placeDep node_modules/heroku string-width@4.2.3 OK for: @oclif/core@2.16.0 want: ^4.2.3
+758 silly placeDep node_modules/heroku/node_modules/@oclif/core supports-color@8.1.1 OK for: @oclif/core@2.16.0 want: ^8.1.1
+759 silly placeDep node_modules/heroku supports-hyperlinks@2.3.0 OK for: @oclif/core@2.16.0 want: ^2.2.0
+760 silly placeDep node_modules/heroku ts-node@10.9.2 OK for: @oclif/core@2.16.0 want: ^10.9.1
+761 silly placeDep node_modules/heroku typescript@5.6.3 OK for: ts-node@10.9.2 want: >=2.7
+762 silly placeDep node_modules/heroku/node_modules/@oclif/core tslib@2.8.1 OK for: @oclif/core@2.16.0 want: ^2.5.0
+763 silly placeDep node_modules/heroku widest-line@3.1.0 OK for: @oclif/core@2.16.0 want: ^3.1.0
+764 silly placeDep node_modules/heroku wordwrap@1.0.0 OK for: @oclif/core@2.16.0 want: ^1.0.0
+765 silly placeDep node_modules/heroku/node_modules/@oclif/core wrap-ansi@7.0.0 OK for: @oclif/core@2.16.0 want: ^7.0.0
+766 silly fetch manifest escape-string-regexp@4.0.0
+767 silly fetch manifest jake@^10.8.5
+768 silly fetch manifest slash@^3.0.0
+769 silly fetch manifest ignore@^5.2.0
+770 http fetch GET 200 https://registry.npmjs.org/ignore 535ms (cache updated)
+771 silly fetch manifest merge2@^1.4.1
+772 http fetch GET 200 https://registry.npmjs.org/slash 562ms (cache revalidated)
+773 silly fetch manifest dir-glob@^3.0.1
+774 http fetch GET 200 https://registry.npmjs.org/jake 633ms (cache revalidated)
+775 silly fetch manifest fast-glob@^3.2.9
+776 http fetch GET 200 https://registry.npmjs.org/dir-glob 401ms (cache revalidated)
+777 silly fetch manifest array-union@^2.1.0
+778 http fetch GET 200 https://registry.npmjs.org/merge2 482ms (cache revalidated)
+779 silly fetch manifest is-docker@^2.0.0
+780 silly fetch manifest argparse@^1.0.7
+781 http fetch GET 200 https://registry.npmjs.org/fast-glob 401ms (cache revalidated)
+782 silly fetch manifest esprima@^4.0.0
+783 http fetch GET 200 https://registry.npmjs.org/array-union 571ms (cache revalidated)
+784 silly fetch manifest astral-regex@^2.0.0
+785 http fetch GET 200 https://registry.npmjs.org/esprima 502ms (cache revalidated)
+786 silly fetch manifest is-fullwidth-code-point@^3.0.0
+787 http fetch GET 200 https://registry.npmjs.org/argparse 531ms (cache revalidated)
+788 silly fetch manifest emoji-regex@^8.0.0
+789 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 377ms (cache revalidated)
+790 silly fetch manifest yn@3.1.1
+791 http fetch GET 200 https://registry.npmjs.org/astral-regex 407ms (cache miss)
+792 silly fetch manifest arg@^4.1.0
+793 http fetch GET 200 https://registry.npmjs.org/emoji-regex 559ms (cache updated)
+794 silly fetch manifest diff@^4.0.1
+795 http fetch GET 200 https://registry.npmjs.org/yn 503ms (cache miss)
+796 silly fetch manifest acorn@^8.4.1
+797 http fetch GET 200 https://registry.npmjs.org/diff 342ms (cache miss)
+798 silly fetch manifest acorn-walk@^8.1.1
+799 http fetch GET 200 https://registry.npmjs.org/arg 530ms (cache revalidated)
+800 silly fetch manifest make-error@^1.1.1
+801 http fetch GET 200 https://registry.npmjs.org/acorn-walk 421ms (cache updated)
+802 silly fetch manifest create-require@^1.1.0
+803 http fetch GET 200 https://registry.npmjs.org/make-error 478ms (cache miss)
+804 silly fetch manifest @tsconfig/node10@^1.0.7
+805 http fetch GET 200 https://registry.npmjs.org/create-require 535ms (cache miss)
+806 silly fetch manifest @tsconfig/node12@^1.0.7
+807 http fetch GET 200 https://registry.npmjs.org/@tsconfig%2fnode10 571ms (cache miss)
+808 silly fetch manifest @tsconfig/node14@^1.0.0
+809 http fetch GET 200 https://registry.npmjs.org/@tsconfig%2fnode14 484ms (cache miss)
+810 silly fetch manifest @tsconfig/node16@^1.0.2
+811 http fetch GET 200 https://registry.npmjs.org/@tsconfig%2fnode12 716ms (cache miss)
+812 silly fetch manifest v8-compile-cache-lib@^3.0.1
+813 http fetch GET 200 https://registry.npmjs.org/acorn 1738ms (cache updated)
+814 silly fetch manifest @cspotcode/source-map-support@^0.8.0
+815 http fetch GET 200 https://registry.npmjs.org/v8-compile-cache-lib 371ms (cache miss)
+816 http fetch GET 200 https://registry.npmjs.org/@tsconfig%2fnode16 514ms (cache miss)
+817 http fetch GET 200 https://registry.npmjs.org/@cspotcode%2fsource-map-support 560ms (cache miss)
+818 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-legacy @heroku-cli/command@8.5.0 OK for: @oclif/plugin-legacy@1.3.6 want: ^8.5.0
+819 silly placeDep node_modules/heroku @oclif/color@0.1.2 OK for: @oclif/plugin-legacy@1.3.6 want: ^0.1.2
+820 silly placeDep node_modules/heroku @oclif/command@1.8.36 OK for: @oclif/plugin-legacy@1.3.6 want: 1.8.36
+821 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-legacy ansi-escapes@4.3.2 OK for: @oclif/plugin-legacy@1.3.6 want: ^4.3.2
+822 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-legacy tslib@2.8.1 OK for: @oclif/plugin-legacy@1.3.6 want: ^2.0.0
+823 silly fetch manifest open@^6.2.0
+824 silly fetch manifest cli-ux@^4.9.3
+825 silly fetch manifest fs-extra@^7.0.1
+826 silly fetch manifest @oclif/errors@^1.2.2
+827 silly fetch manifest @heroku-cli/color@^1.1.14
+828 silly fetch manifest chalk@^3.0.0
+829 silly fetch manifest strip-ansi@^5.2.0
+830 silly fetch manifest supports-color@^5.4.0
+831 silly fetch manifest @oclif/config@^1.18.2
+832 silly fetch manifest @oclif/errors@^1.3.6
+833 http fetch GET 200 https://registry.npmjs.org/@oclif%2ferrors 519ms (cache miss)
+834 silly fetch manifest @oclif/parser@^3.8.17
+835 http fetch GET 200 https://registry.npmjs.org/@oclif%2ferrors 839ms (cache miss)
+836 silly fetch manifest @oclif/help@^1.0.1
+837 http fetch GET 200 https://registry.npmjs.org/@oclif%2fparser 472ms (cache miss)
+838 http fetch GET 200 https://registry.npmjs.org/@oclif%2fhelp 751ms (cache miss)
+839 http fetch GET 200 https://registry.npmjs.org/@oclif%2fconfig 1640ms (cache miss)
+840 silly placeDep node_modules/heroku/node_modules/@oclif/color ansi-styles@3.2.1 OK for: @oclif/color@0.1.2 want: ^3.2.1
+841 silly placeDep node_modules/heroku/node_modules/@oclif/color chalk@3.0.0 OK for: @oclif/color@0.1.2 want: ^3.0.0
+842 silly placeDep node_modules/heroku/node_modules/@oclif/color strip-ansi@5.2.0 OK for: @oclif/color@0.1.2 want: ^5.2.0
+843 silly placeDep node_modules/heroku/node_modules/@oclif/color supports-color@5.5.0 OK for: @oclif/color@0.1.2 want: ^5.4.0
+844 silly fetch manifest ansi-styles@^4.1.0
+845 silly fetch manifest ansi-regex@^4.1.0
+846 silly fetch manifest has-flag@^3.0.0
+847 silly placeDep node_modules/heroku @oclif/config@1.18.17 OK for: @oclif/command@1.8.36 want: ^1.18.2
+848 silly placeDep node_modules/heroku @oclif/errors@1.3.6 OK for: @oclif/command@1.8.36 want: ^1.3.6
+849 silly placeDep node_modules/heroku @oclif/help@1.0.15 OK for: @oclif/command@1.8.36 want: ^1.0.1
+850 silly placeDep node_modules/heroku @oclif/parser@3.8.17 OK for: @oclif/command@1.8.36 want: ^3.8.17
+851 silly fetch manifest tslib@^2.6.1
+852 silly fetch manifest @oclif/config@1.18.16
+853 silly fetch manifest tslib@^2.6.2
+854 silly placeDep node_modules/heroku/node_modules/@oclif/config tslib@2.8.1 OK for: @oclif/config@1.18.17 want: ^2.6.1
+855 silly placeDep node_modules/heroku/node_modules/@oclif/errors fs-extra@8.1.0 OK for: @oclif/errors@1.3.6 want: ^8.1
+856 silly placeDep node_modules/heroku/node_modules/@oclif/errors wrap-ansi@7.0.0 OK for: @oclif/errors@1.3.6 want: ^7.0.0
+857 silly fetch manifest jsonfile@^4.0.0
+858 silly fetch manifest universalify@^0.1.0
+859 silly placeDep node_modules/heroku/node_modules/@oclif/help @oclif/config@1.18.16 OK for: @oclif/help@1.0.15 want: 1.18.16
+860 silly placeDep node_modules/heroku/node_modules/@oclif/help chalk@4.1.2 OK for: @oclif/help@1.0.15 want: ^4.1.2
+861 silly placeDep node_modules/heroku @oclif/linewrap@1.0.0 OK for: @oclif/parser@3.8.17 want: ^1.0.0
+862 silly placeDep node_modules/heroku/node_modules/@oclif/parser chalk@4.1.2 OK for: @oclif/parser@3.8.17 want: ^4.1.0
+863 silly placeDep node_modules/heroku/node_modules/@oclif/parser tslib@2.8.1 OK for: @oclif/parser@3.8.17 want: ^2.6.2
+864 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-not-found @oclif/color@1.0.13 OK for: @oclif/plugin-not-found@2.3.16 want: ^1.0.3
+865 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-not-found @oclif/core@1.26.2 OK for: @oclif/plugin-not-found@2.3.16 want: ^1.25.0
+866 silly placeDep node_modules/heroku fast-levenshtein@3.0.0 OK for: @oclif/plugin-not-found@2.3.16 want: ^3.0.0
+867 silly fetch manifest tslib@^2
+868 silly fetch manifest @oclif/screen@^3.0.4
+869 silly fetch manifest fastest-levenshtein@^1.0.7
+870 http fetch GET 200 https://registry.npmjs.org/fastest-levenshtein 362ms (cache miss)
+871 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-plugins @oclif/color@1.0.13 OK for: @oclif/plugin-plugins@2.4.3 want: ^1.0.4
+872 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-plugins chalk@4.1.2 OK for: @oclif/plugin-plugins@2.4.3 want: ^4.1.2
+873 silly placeDep node_modules/heroku load-json-file@5.3.0 OK for: @oclif/plugin-plugins@2.4.3 want: ^5.3.0
+874 silly placeDep node_modules/heroku npm-run-path@4.0.1 OK for: @oclif/plugin-plugins@2.4.3 want: ^4.0.1
+875 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-plugins tslib@2.8.1 OK for: @oclif/plugin-plugins@2.4.3 want: ^2.4.1
+876 silly placeDep node_modules/heroku yarn@1.22.22 OK for: @oclif/plugin-plugins@2.4.3 want: ^1.22.18
+877 silly fetch manifest graceful-fs@^4.1.15
+878 silly fetch manifest pify@^4.0.1
+879 silly fetch manifest strip-bom@^3.0.0
+880 silly fetch manifest type-fest@^0.3.0
+881 silly fetch manifest path-key@^3.0.0
+882 http fetch GET 200 https://registry.npmjs.org/strip-bom 519ms (cache revalidated)
+883 http fetch GET 200 https://registry.npmjs.org/pify 523ms (cache revalidated)
+884 http fetch GET 200 https://registry.npmjs.org/path-key 539ms (cache revalidated)
+885 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-update chalk@4.1.2 OK for: @oclif/plugin-update@3.2.4 want: ^4
+886 silly placeDep node_modules/heroku cross-spawn@7.0.3 OK for: @oclif/plugin-update@3.2.4 want: ^7.0.3
+887 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-update filesize@6.4.0 OK for: @oclif/plugin-update@3.2.4 want: ^6.1.0
+888 silly placeDep node_modules/heroku lodash.throttle@4.1.1 OK for: @oclif/plugin-update@3.2.4 want: ^4.1.1
+889 silly placeDep node_modules/heroku log-chopper@1.0.2 OK for: @oclif/plugin-update@3.2.4 want: ^1.0.2
+890 silly placeDep node_modules/heroku tar-fs@2.1.1 OK for: @oclif/plugin-update@3.2.4 want: ^2.1.1
+891 silly fetch manifest path-key@^3.1.0
+892 silly fetch manifest shebang-command@^2.0.0
+893 silly fetch manifest which@^2.0.1
+894 silly fetch manifest byline@5.x
+895 silly fetch manifest chownr@^1.1.1
+896 http fetch GET 200 https://registry.npmjs.org/byline 453ms (cache miss)
+897 silly fetch manifest mkdirp-classic@^0.5.2
+898 http fetch GET 200 https://registry.npmjs.org/chownr 461ms (cache miss)
+899 silly fetch manifest pump@^3.0.0
+900 http fetch GET 200 https://registry.npmjs.org/shebang-command 511ms (cache revalidated)
+901 silly fetch manifest tar-stream@^2.1.4
+902 http fetch GET 200 https://registry.npmjs.org/mkdirp-classic 402ms (cache miss)
+903 http fetch GET 200 https://registry.npmjs.org/pump 481ms (cache miss)
+904 http fetch GET 200 https://registry.npmjs.org/tar-stream 758ms (cache miss)
+905 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-warn-if-update-available chalk@4.1.2 OK for: @oclif/plugin-warn-if-update-available@2.0.29 want: ^4.1.0
+906 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-which @oclif/core@1.26.2 OK for: @oclif/plugin-which@2.2.8 want: ^1.25.0
+907 silly placeDep node_modules/heroku/node_modules/@oclif/plugin-which tslib@2.8.1 OK for: @oclif/plugin-which@2.2.8 want: ^2.4.1
+908 silly fetch manifest @opentelemetry/api@^1.0.0
+909 silly fetch manifest @opentelemetry/api@>=1.0.0 <1.5.0
+910 silly fetch manifest @opentelemetry/api@>=1.3.0 <1.5.0
+911 silly placeDep node_modules/heroku @opentelemetry/core@1.15.2 OK for: @opentelemetry/exporter-trace-otlp-http@0.41.2 want: 1.15.2
+912 silly placeDep node_modules/heroku @opentelemetry/api@1.4.1 REPLACE for: @opentelemetry/core@1.15.2 want: >=1.0.0 <1.5.0
+913 silly placeDep node_modules/heroku @opentelemetry/otlp-exporter-base@0.41.2 OK for: @opentelemetry/exporter-trace-otlp-http@0.41.2 want: 0.41.2
+914 silly placeDep node_modules/heroku @opentelemetry/otlp-transformer@0.41.2 OK for: @opentelemetry/exporter-trace-otlp-http@0.41.2 want: 0.41.2
+915 silly placeDep node_modules/heroku/node_modules/@opentelemetry/exporter-trace-otlp-http @opentelemetry/resources@1.15.2 OK for: @opentelemetry/exporter-trace-otlp-http@0.41.2 want: 1.15.2
+916 silly placeDep node_modules/heroku/node_modules/@opentelemetry/exporter-trace-otlp-http @opentelemetry/sdk-trace-base@1.15.2 OK for: @opentelemetry/exporter-trace-otlp-http@0.41.2 want: 1.15.2
+917 silly fetch manifest @opentelemetry/semantic-conventions@1.15.2
+918 silly fetch manifest @opentelemetry/api-logs@0.41.2
+919 silly fetch manifest @opentelemetry/sdk-logs@0.41.2
+920 silly fetch manifest @opentelemetry/sdk-metrics@1.15.2
+921 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fsdk-logs 571ms (cache miss)
+922 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fsdk-metrics 744ms (cache miss)
+923 silly placeDep node_modules/heroku/node_modules/@opentelemetry/core @opentelemetry/semantic-conventions@1.15.2 OK for: @opentelemetry/core@1.15.2 want: 1.15.2
+924 silly placeDep node_modules/heroku @opentelemetry/api-logs@0.51.1 OK for: @opentelemetry/instrumentation@0.51.1 want: 0.51.1
+925 silly placeDep node_modules/heroku @types/shimmer@1.2.0 OK for: @opentelemetry/instrumentation@0.51.1 want: ^1.0.2
+926 silly placeDep node_modules/heroku import-in-the-middle@1.7.4 OK for: @opentelemetry/instrumentation@0.51.1 want: 1.7.4
+927 silly placeDep node_modules/heroku require-in-the-middle@7.4.0 OK for: @opentelemetry/instrumentation@0.51.1 want: ^7.1.1
+928 silly placeDep node_modules/heroku shimmer@1.2.1 OK for: @opentelemetry/instrumentation@0.51.1 want: ^1.2.1
+929 silly fetch manifest acorn@^8.8.2
+930 silly fetch manifest cjs-module-lexer@^1.2.2
+931 silly fetch manifest acorn-import-attributes@^1.9.5
+932 silly fetch manifest module-details-from-path@^1.0.3
+933 http fetch GET 200 https://registry.npmjs.org/module-details-from-path 391ms (cache miss)
+934 silly fetch manifest debug@^4.3.5
+935 silly fetch manifest resolve@^1.22.8
+936 http fetch GET 200 https://registry.npmjs.org/cjs-module-lexer 424ms (cache updated)
+937 http fetch GET 200 https://registry.npmjs.org/acorn-import-attributes 488ms (cache revalidated)
+938 http fetch GET 200 https://registry.npmjs.org/resolve 481ms (cache revalidated)
+939 silly placeDep node_modules/heroku/node_modules/@opentelemetry/otlp-transformer @opentelemetry/api-logs@0.41.2 OK for: @opentelemetry/otlp-transformer@0.41.2 want: 0.41.2
+940 silly placeDep node_modules/heroku/node_modules/@opentelemetry/otlp-transformer @opentelemetry/resources@1.15.2 OK for: @opentelemetry/otlp-transformer@0.41.2 want: 1.15.2
+941 silly placeDep node_modules/heroku @opentelemetry/sdk-logs@0.41.2 OK for: @opentelemetry/otlp-transformer@0.41.2 want: 0.41.2
+942 silly placeDep node_modules/heroku @opentelemetry/sdk-metrics@1.15.2 OK for: @opentelemetry/otlp-transformer@0.41.2 want: 1.15.2
+943 silly placeDep node_modules/heroku/node_modules/@opentelemetry/otlp-transformer @opentelemetry/sdk-trace-base@1.15.2 OK for: @opentelemetry/otlp-transformer@0.41.2 want: 1.15.2
+944 silly fetch manifest lodash.merge@^4.6.2
+945 http fetch GET 200 https://registry.npmjs.org/lodash.merge 591ms (cache revalidated)
+946 silly fetch manifest @opentelemetry/api@>=1.0.0 <1.10.0
+947 silly placeDep node_modules/heroku/node_modules/@opentelemetry/resources @opentelemetry/core@1.27.0 OK for: @opentelemetry/resources@1.27.0 want: 1.27.0
+948 silly fetch manifest @opentelemetry/api@>=1.4.0 <1.5.0
+949 silly placeDep node_modules/heroku/node_modules/@opentelemetry/sdk-logs @opentelemetry/resources@1.15.2 OK for: @opentelemetry/sdk-logs@0.41.2 want: 1.15.2
+950 silly placeDep node_modules/heroku/node_modules/@opentelemetry/sdk-metrics @opentelemetry/resources@1.15.2 OK for: @opentelemetry/sdk-metrics@1.15.2 want: 1.15.2
+951 silly placeDep node_modules/heroku lodash.merge@4.6.2 OK for: @opentelemetry/sdk-metrics@1.15.2 want: ^4.6.2
+952 silly placeDep node_modules/heroku/node_modules/@opentelemetry/sdk-trace-base @opentelemetry/core@1.27.0 OK for: @opentelemetry/sdk-trace-base@1.27.0 want: 1.27.0
+953 silly placeDep node_modules/heroku @opentelemetry/context-async-hooks@1.27.0 OK for: @opentelemetry/sdk-trace-node@1.27.0 want: 1.27.0
+954 silly placeDep node_modules/heroku/node_modules/@opentelemetry/sdk-trace-node @opentelemetry/core@1.27.0 OK for: @opentelemetry/sdk-trace-node@1.27.0 want: 1.27.0
+955 silly placeDep node_modules/heroku @opentelemetry/propagator-b3@1.27.0 OK for: @opentelemetry/sdk-trace-node@1.27.0 want: 1.27.0
+956 silly placeDep node_modules/heroku @opentelemetry/propagator-jaeger@1.27.0 OK for: @opentelemetry/sdk-trace-node@1.27.0 want: 1.27.0
+957 silly placeDep node_modules/heroku/node_modules/@opentelemetry/propagator-b3 @opentelemetry/core@1.27.0 OK for: @opentelemetry/propagator-b3@1.27.0 want: 1.27.0
+958 silly placeDep node_modules/heroku/node_modules/@opentelemetry/propagator-jaeger @opentelemetry/core@1.27.0 OK for: @opentelemetry/propagator-jaeger@1.27.0 want: 1.27.0
+959 silly placeDep node_modules/heroku undici-types@6.19.8 OK for: @types/node@22.8.6 want: ~6.19.8
+960 silly placeDep node_modules/heroku color-convert@2.0.1 OK for: ansi-styles@4.3.0 want: ^2.0.1
+961 silly fetch manifest color-name@~1.1.4
+962 http fetch GET 200 https://registry.npmjs.org/color-name 463ms (cache revalidated)
+963 silly placeDep node_modules/heroku rimraf@2.7.1 OK for: async-file@2.0.2 want: ^2.5.2
+964 silly fetch manifest glob@^7.1.3
+965 silly placeDep node_modules/heroku ansicolors@0.3.2 OK for: cardinal@2.1.1 want: ~0.3.2
+966 silly placeDep node_modules/heroku redeyed@2.1.1 OK for: cardinal@2.1.1 want: ~2.1.0
+967 silly fetch manifest esprima@~4.0.0
+968 silly placeDep node_modules/heroku/node_modules/chalk ansi-styles@3.2.1 OK for: chalk@2.4.2 want: ^3.2.1
+969 silly placeDep node_modules/heroku escape-string-regexp@1.0.5 OK for: chalk@2.4.2 want: ^1.0.5
+970 silly placeDep node_modules/heroku/node_modules/chalk supports-color@5.5.0 OK for: chalk@2.4.2 want: ^5.3.0
+971 silly placeDep node_modules/heroku/node_modules/clean-stack escape-string-regexp@4.0.0 OK for: clean-stack@3.0.1 want: 4.0.0
+972 silly placeDep node_modules/heroku/node_modules/cli-ux @oclif/core@1.26.2 OK for: cli-ux@6.0.9 want: ^1.1.1
+973 silly placeDep node_modules/heroku @oclif/screen@1.0.4 OK for: cli-ux@6.0.9 want: ^1.0.4 
+974 silly placeDep node_modules/heroku/node_modules/cli-ux ansi-escapes@4.3.2 OK for: cli-ux@6.0.9 want: ^4.3.0
+975 silly placeDep node_modules/heroku/node_modules/cli-ux chalk@4.1.2 OK for: cli-ux@6.0.9 want: ^4.1.0
+976 silly placeDep node_modules/heroku extract-stack@2.0.0 OK for: cli-ux@6.0.9 want: ^2.0.0
+977 silly placeDep node_modules/heroku/node_modules/cli-ux fs-extra@8.1.0 OK for: cli-ux@6.0.9 want: ^8.1
+978 silly placeDep node_modules/heroku/node_modules/cli-ux supports-color@8.1.1 OK for: cli-ux@6.0.9 want: ^8.1.0
+979 silly placeDep node_modules/heroku/node_modules/cli-ux tslib@2.8.1 OK for: cli-ux@6.0.9 want: ^2.0.0
+980 silly placeDep node_modules/heroku color-name@1.1.4 OK for: color-convert@2.0.1 want: ~1.1.4
+981 silly placeDep node_modules/heroku path-key@3.1.1 OK for: cross-spawn@7.0.3 want: ^3.1.0
+982 silly placeDep node_modules/heroku shebang-command@2.0.0 OK for: cross-spawn@7.0.3 want: ^2.0.0
+983 silly placeDep node_modules/heroku which@2.0.2 OK for: cross-spawn@7.0.3 want: ^2.0.1
+984 silly fetch manifest shebang-regex@^3.0.0
+985 silly fetch manifest isexe@^2.0.0
+986 http fetch GET 200 https://registry.npmjs.org/shebang-regex 423ms (cache revalidated)
+987 http fetch GET 200 https://registry.npmjs.org/isexe 442ms (cache revalidated)
+988 silly placeDep node_modules/heroku @babel/runtime@7.26.0 OK for: date-fns@2.30.0 want: ^7.21.0
+989 silly fetch manifest regenerator-runtime@^0.14.0
+990 http fetch GET 200 https://registry.npmjs.org/regenerator-runtime 484ms (cache revalidated)
+991 silly placeDep node_modules/heroku regenerator-runtime@0.14.1 OK for: @babel/runtime@7.26.0 want: ^0.14.0
+992 silly placeDep node_modules/heroku ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+993 silly placeDep node_modules/heroku/node_modules/edit-string debug@3.2.7 OK for: edit-string@1.1.6 want: ^3.1.0
+994 silly placeDep node_modules/heroku/node_modules/edit-string execa@0.10.0 OK for: edit-string@1.1.6 want: ^0.10.0
+995 silly placeDep node_modules/heroku tmp@0.0.33 OK for: edit-string@1.1.6 want: ^0.0.33
+996 silly fetch manifest is-stream@^1.1.0
+997 silly fetch manifest p-finally@^1.0.0
+998 silly fetch manifest strip-eof@^1.0.0
+999 silly fetch manifest get-stream@^3.0.0
+1000 silly fetch manifest cross-spawn@^6.0.0
+1001 silly fetch manifest signal-exit@^3.0.0
+1002 silly fetch manifest npm-run-path@^2.0.0
+1003 silly fetch manifest os-tmpdir@~1.0.2
+1004 http fetch GET 200 https://registry.npmjs.org/strip-eof 420ms (cache miss)
+1005 http fetch GET 200 https://registry.npmjs.org/p-finally 428ms (cache miss)
+1006 http fetch GET 200 https://registry.npmjs.org/os-tmpdir 419ms (cache miss)
+1007 silly placeDep node_modules/heroku jake@10.9.2 OK for: ejs@3.1.10 want: ^10.8.5
+1008 silly fetch manifest async@^3.2.3
+1009 silly fetch manifest chalk@^4.0.2
+1010 silly fetch manifest filelist@^1.0.4
+1011 silly fetch manifest minimatch@^3.1.2
+1012 http fetch GET 200 https://registry.npmjs.org/filelist 497ms (cache revalidated)
+1013 silly placeDep node_modules/heroku get-stream@6.0.1 OK for: execa@5.1.1 want: ^6.0.0
+1014 silly placeDep node_modules/heroku human-signals@2.1.0 OK for: execa@5.1.1 want: ^2.1.0
+1015 silly placeDep node_modules/heroku is-stream@2.0.1 OK for: execa@5.1.1 want: ^2.0.0
+1016 silly placeDep node_modules/heroku merge-stream@2.0.0 OK for: execa@5.1.1 want: ^2.0.0
+1017 silly placeDep node_modules/heroku onetime@5.1.2 OK for: execa@5.1.1 want: ^5.1.2
+1018 silly placeDep node_modules/heroku/node_modules/execa signal-exit@3.0.7 OK for: execa@5.1.1 want: ^3.0.3
+1019 silly placeDep node_modules/heroku strip-final-newline@2.0.0 OK for: execa@5.1.1 want: ^2.0.0
+1020 silly fetch manifest mimic-fn@^2.1.0
+1021 http fetch GET 200 https://registry.npmjs.org/mimic-fn 1057ms (cache revalidated)
+1022 silly placeDep node_modules/heroku chardet@0.7.0 OK for: external-editor@3.1.0 want: ^0.7.0
+1023 silly placeDep node_modules/heroku iconv-lite@0.4.24 OK for: external-editor@3.1.0 want: ^0.4.24
+1024 silly fetch manifest safer-buffer@>= 2.1.2 < 3
+1025 http fetch GET 200 https://registry.npmjs.org/safer-buffer 844ms (cache revalidated)
+1026 silly placeDep node_modules/heroku fastest-levenshtein@1.0.16 OK for: fast-levenshtein@3.0.0 want: ^1.0.7
+1027 silly placeDep node_modules/heroku http-proxy@1.18.1 OK for: foreman@3.0.1 want: ^1.17.0
+1028 silly placeDep node_modules/heroku mustache@2.3.2 OK for: foreman@3.0.1 want: ^2.2.1
+1029 silly fetch manifest eventemitter3@^4.0.0
+1030 silly fetch manifest requires-port@^1.0.0
+1031 silly fetch manifest follow-redirects@^1.0.0
+1032 http fetch GET 200 https://registry.npmjs.org/requires-port 505ms (cache revalidated)
+1033 http fetch GET 200 https://registry.npmjs.org/eventemitter3 579ms (cache revalidated)
+1034 http fetch GET 200 https://registry.npmjs.org/follow-redirects 1034ms (cache updated)
+1035 silly placeDep node_modules/heroku at-least-node@1.0.0 OK for: fs-extra@9.1.0 want: ^1.0.0
+1036 silly placeDep node_modules/heroku graceful-fs@4.2.11 OK for: fs-extra@9.1.0 want: ^4.2.0
+1037 silly placeDep node_modules/heroku jsonfile@6.1.0 OK for: fs-extra@9.1.0 want: ^6.0.1
+1038 silly placeDep node_modules/heroku universalify@2.0.1 OK for: fs-extra@9.1.0 want: ^2.0.0
+1039 silly placeDep node_modules/heroku is-url@1.2.4 OK for: github-url-to-object@4.0.6 want: ^1.1.0
+1040 silly placeDep node_modules/heroku foreground-child@3.3.0 OK for: glob@10.4.5 want: ^3.1.0
+1041 silly placeDep node_modules/heroku jackspeak@3.4.3 OK for: glob@10.4.5 want: ^3.1.2
+1042 silly placeDep node_modules/heroku minimatch@9.0.5 OK for: glob@10.4.5 want: ^9.0.4
+1043 silly placeDep node_modules/heroku minipass@7.1.2 OK for: glob@10.4.5 want: ^7.1.2
+1044 silly placeDep node_modules/heroku package-json-from-dist@1.0.1 OK for: glob@10.4.5 want: ^1.0.0
+1045 silly placeDep node_modules/heroku path-scurry@1.11.1 OK for: glob@10.4.5 want: ^1.11.1
+1046 silly fetch manifest @isaacs/cliui@^8.0.2
+1047 silly fetch manifest @pkgjs/parseargs@^0.11.0
+1048 silly fetch manifest brace-expansion@^2.0.1
+1049 http fetch GET 200 https://registry.npmjs.org/brace-expansion 641ms (cache revalidated)
+1050 silly fetch manifest lru-cache@^10.2.0
+1051 http fetch GET 200 https://registry.npmjs.org/@isaacs%2fcliui 692ms (cache revalidated)
+1052 http fetch GET 200 https://registry.npmjs.org/@pkgjs%2fparseargs 934ms (cache revalidated)
+1053 silly placeDep node_modules/heroku array-union@2.1.0 OK for: globby@11.1.0 want: ^2.1.0
+1054 silly placeDep node_modules/heroku dir-glob@3.0.1 OK for: globby@11.1.0 want: ^3.0.1
+1055 silly placeDep node_modules/heroku fast-glob@3.3.2 OK for: globby@11.1.0 want: ^3.2.9
+1056 silly placeDep node_modules/heroku ignore@5.3.2 OK for: globby@11.1.0 want: ^5.2.0
+1057 silly placeDep node_modules/heroku merge2@1.4.1 OK for: globby@11.1.0 want: ^1.4.1
+1058 silly placeDep node_modules/heroku slash@3.0.0 OK for: globby@11.1.0 want: ^3.0.0
+1059 silly fetch manifest path-type@^4.0.0
+1060 silly fetch manifest @nodelib/fs.stat@^2.0.2
+1061 silly fetch manifest @nodelib/fs.walk@^1.2.3
+1062 http fetch GET 200 https://registry.npmjs.org/path-type 518ms (cache revalidated)
+1063 silly fetch manifest glob-parent@^5.1.2
+1064 http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.walk 535ms (cache revalidated)
+1065 silly fetch manifest merge2@^1.3.0
+1066 silly fetch manifest micromatch@^4.0.4
+1067 http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.stat 987ms (cache revalidated)
+1068 http fetch GET 200 https://registry.npmjs.org/glob-parent 726ms (cache revalidated)
+1069 http fetch GET 200 https://registry.npmjs.org/micromatch 944ms (cache updated)
+1070 silly placeDep node_modules/heroku path-type@4.0.0 OK for: dir-glob@3.0.1 want: ^4.0.0
+1071 silly placeDep node_modules/heroku @nodelib/fs.stat@2.0.5 OK for: fast-glob@3.3.2 want: ^2.0.2
+1072 silly placeDep node_modules/heroku @nodelib/fs.walk@1.2.8 OK for: fast-glob@3.3.2 want: ^1.2.3
+1073 silly placeDep node_modules/heroku glob-parent@5.1.2 OK for: fast-glob@3.3.2 want: ^5.1.2
+1074 silly placeDep node_modules/heroku micromatch@4.0.8 OK for: fast-glob@3.3.2 want: ^4.0.4
+1075 silly fetch manifest @nodelib/fs.scandir@2.1.5
+1076 silly fetch manifest fastq@^1.6.0
+1077 silly fetch manifest is-glob@^4.0.1
+1078 http fetch GET 200 https://registry.npmjs.org/is-glob 670ms (cache revalidated)
+1079 silly fetch manifest braces@^3.0.3
+1080 http fetch GET 200 https://registry.npmjs.org/fastq 681ms (cache revalidated)
+1081 silly fetch manifest picomatch@^2.3.1
+1082 http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.scandir 715ms (cache revalidated)
+1083 http fetch GET 200 https://registry.npmjs.org/braces 728ms (cache updated)
+1084 http fetch GET 200 https://registry.npmjs.org/picomatch 885ms (cache updated)
+1085 silly placeDep node_modules/heroku @nodelib/fs.scandir@2.1.5 OK for: @nodelib/fs.walk@1.2.8 want: 2.1.5
+1086 silly placeDep node_modules/heroku fastq@1.17.1 OK for: @nodelib/fs.walk@1.2.8 want: ^1.6.0
+1087 silly fetch manifest run-parallel@^1.1.9
+1088 silly fetch manifest reusify@^1.0.4
+1089 http fetch GET 200 https://registry.npmjs.org/reusify 502ms (cache revalidated)
+1090 http fetch GET 200 https://registry.npmjs.org/run-parallel 512ms (cache revalidated)
+1091 silly placeDep node_modules/heroku run-parallel@1.2.0 OK for: @nodelib/fs.scandir@2.1.5 want: ^1.1.9
+1092 silly fetch manifest queue-microtask@^1.2.2
+1093 http fetch GET 200 https://registry.npmjs.org/queue-microtask 472ms (cache revalidated)
+1094 silly placeDep node_modules/heroku reusify@1.0.4 OK for: fastq@1.17.1 want: ^1.0.4
+1095 silly placeDep node_modules/heroku is-glob@4.0.3 OK for: glob-parent@5.1.2 want: ^4.0.1
+1096 silly fetch manifest is-extglob@^2.1.1
+1097 http fetch GET 200 https://registry.npmjs.org/is-extglob 452ms (cache revalidated)
+1098 silly placeDep node_modules/heroku @sindresorhus/is@4.6.0 OK for: got@11.8.6 want: ^4.0.0
+1099 silly placeDep node_modules/heroku @szmarczak/http-timer@4.0.6 OK for: got@11.8.6 want: ^4.0.5
+1100 silly placeDep node_modules/heroku @types/cacheable-request@6.0.3 OK for: got@11.8.6 want: ^6.0.1
+1101 silly placeDep node_modules/heroku @types/responselike@1.0.3 OK for: got@11.8.6 want: ^1.0.0
+1102 silly placeDep node_modules/heroku cacheable-lookup@5.0.4 OK for: got@11.8.6 want: ^5.0.3
+1103 silly placeDep node_modules/heroku cacheable-request@7.0.4 OK for: got@11.8.6 want: ^7.0.2
+1104 silly placeDep node_modules/heroku decompress-response@6.0.0 OK for: got@11.8.6 want: ^6.0.0
+1105 silly placeDep node_modules/heroku http2-wrapper@1.0.3 OK for: got@11.8.6 want: ^1.0.0-beta.5.2
+1106 silly placeDep node_modules/heroku lowercase-keys@2.0.0 OK for: got@11.8.6 want: ^2.0.0
+1107 silly placeDep node_modules/heroku p-cancelable@2.1.1 OK for: got@11.8.6 want: ^2.0.0
+1108 silly placeDep node_modules/heroku responselike@2.0.1 OK for: got@11.8.6 want: ^2.0.0
+1109 silly fetch manifest defer-to-connect@^2.0.0
+1110 silly fetch manifest @types/keyv@^3.1.4
+1111 silly fetch manifest @types/http-cache-semantics@*
+1112 http fetch GET 200 https://registry.npmjs.org/@types%2fhttp-cache-semantics 315ms (cache miss)
+1113 silly fetch manifest keyv@^4.0.0
+1114 http fetch GET 200 https://registry.npmjs.org/defer-to-connect 405ms (cache miss)
+1115 silly fetch manifest get-stream@^5.1.0
+1116 silly fetch manifest normalize-url@^6.0.1
+1117 http fetch GET 200 https://registry.npmjs.org/@types%2fkeyv 470ms (cache miss)
+1118 silly fetch manifest clone-response@^1.0.2
+1119 http fetch GET 200 https://registry.npmjs.org/keyv 425ms (cache updated)
+1120 silly fetch manifest http-cache-semantics@^4.0.0
+1121 http fetch GET 200 https://registry.npmjs.org/clone-response 401ms (cache miss)
+1122 silly fetch manifest mimic-response@^3.1.0
+1123 http fetch GET 200 https://registry.npmjs.org/normalize-url 506ms (cache revalidated)
+1124 silly fetch manifest quick-lru@^5.1.1
+1125 http fetch GET 200 https://registry.npmjs.org/http-cache-semantics 813ms (cache miss)
+1126 silly fetch manifest resolve-alpn@^1.0.0
+1127 http fetch GET 200 https://registry.npmjs.org/quick-lru 711ms (cache miss)
+1128 http fetch GET 200 https://registry.npmjs.org/mimic-response 785ms (cache miss)
+1129 http fetch GET 200 https://registry.npmjs.org/resolve-alpn 401ms (cache miss)
+1130 silly placeDep node_modules/heroku defer-to-connect@2.0.1 OK for: @szmarczak/http-timer@4.0.6 want: ^2.0.0
+1131 silly placeDep node_modules/heroku @types/http-cache-semantics@4.0.4 OK for: @types/cacheable-request@6.0.3 want: *
+1132 silly placeDep node_modules/heroku @types/keyv@3.1.4 OK for: @types/cacheable-request@6.0.3 want: ^3.1.4
+1133 silly placeDep node_modules/heroku clone-response@1.0.3 OK for: cacheable-request@7.0.4 want: ^1.0.2
+1134 silly placeDep node_modules/heroku/node_modules/cacheable-request get-stream@5.2.0 OK for: cacheable-request@7.0.4 want: ^5.1.0
+1135 silly placeDep node_modules/heroku http-cache-semantics@4.1.1 OK for: cacheable-request@7.0.4 want: ^4.0.0
+1136 silly placeDep node_modules/heroku keyv@4.5.4 OK for: cacheable-request@7.0.4 want: ^4.0.0
+1137 silly placeDep node_modules/heroku normalize-url@6.1.0 OK for: cacheable-request@7.0.4 want: ^6.0.1
+1138 silly fetch manifest mimic-response@^1.0.0
+1139 silly fetch manifest json-buffer@3.0.1
+1140 http fetch GET 200 https://registry.npmjs.org/json-buffer 481ms (cache revalidated)
+1141 silly placeDep node_modules/heroku mimic-response@1.0.1 OK for: clone-response@1.0.3 want: ^1.0.0
+1142 silly placeDep node_modules/heroku/node_modules/decompress-response mimic-response@3.1.0 OK for: decompress-response@6.0.0 want: ^3.1.0
+1143 silly placeDep node_modules/heroku is-retry-allowed@1.2.0 OK for: heroku-client@3.1.0 want: ^1.0.0
+1144 silly placeDep node_modules/heroku content-type@1.0.5 OK for: http-call@5.3.0 want: ^1.0.4
+1145 silly placeDep node_modules/heroku parse-json@4.0.0 OK for: http-call@5.3.0 want: ^4.0.0
+1146 silly fetch manifest error-ex@^1.3.1
+1147 silly fetch manifest json-parse-better-errors@^1.0.1
+1148 http fetch GET 200 https://registry.npmjs.org/json-parse-better-errors 350ms (cache miss)
+1149 http fetch GET 200 https://registry.npmjs.org/error-ex 498ms (cache revalidated)
+1150 silly placeDep node_modules/heroku eventemitter3@4.0.7 OK for: http-proxy@1.18.1 want: ^4.0.0
+1151 silly placeDep node_modules/heroku follow-redirects@1.15.9 OK for: http-proxy@1.18.1 want: ^1.0.0
+1152 silly placeDep node_modules/heroku requires-port@1.0.0 OK for: http-proxy@1.18.1 want: ^1.0.0
+1153 silly placeDep node_modules/heroku quick-lru@5.1.1 OK for: http2-wrapper@1.0.3 want: ^5.1.1
+1154 silly placeDep node_modules/heroku resolve-alpn@1.2.1 OK for: http2-wrapper@1.0.3 want: ^1.0.0
+1155 silly placeDep node_modules/heroku safer-buffer@2.1.2 OK for: iconv-lite@0.4.24 want: >= 2.1.2 < 3
+1156 silly placeDep node_modules/heroku acorn@8.14.0 OK for: import-in-the-middle@1.7.4 want: ^8.8.2
+1157 silly placeDep node_modules/heroku acorn-import-attributes@1.9.5 OK for: import-in-the-middle@1.7.4 want: ^1.9.5
+1158 silly placeDep node_modules/heroku cjs-module-lexer@1.4.1 OK for: import-in-the-middle@1.7.4 want: ^1.2.2
+1159 silly placeDep node_modules/heroku module-details-from-path@1.0.3 OK for: import-in-the-middle@1.7.4 want: ^1.0.3
+1160 silly placeDep node_modules/heroku/node_modules/inquirer ansi-escapes@4.3.2 OK for: inquirer@8.2.6 want: ^4.2.1
+1161 silly placeDep node_modules/heroku/node_modules/inquirer chalk@4.1.2 OK for: inquirer@8.2.6 want: ^4.1.1
+1162 silly placeDep node_modules/heroku cli-cursor@3.1.0 OK for: inquirer@8.2.6 want: ^3.1.0
+1163 silly placeDep node_modules/heroku/node_modules/inquirer cli-width@3.0.0 OK for: inquirer@8.2.6 want: ^3.0.0
+1164 silly placeDep node_modules/heroku figures@3.2.0 OK for: inquirer@8.2.6 want: ^3.0.0
+1165 silly placeDep node_modules/heroku/node_modules/inquirer mute-stream@0.0.8 OK for: inquirer@8.2.6 want: 0.0.8
+1166 silly placeDep node_modules/heroku ora@5.4.1 OK for: inquirer@8.2.6 want: ^5.4.1
+1167 silly placeDep node_modules/heroku run-async@2.4.1 OK for: inquirer@8.2.6 want: ^2.4.0
+1168 silly placeDep node_modules/heroku rxjs@7.8.1 OK for: inquirer@8.2.6 want: ^7.5.5
+1169 silly placeDep node_modules/heroku through@2.3.8 OK for: inquirer@8.2.6 want: ^2.3.6
+1170 silly fetch manifest restore-cursor@^3.1.0
+1171 silly fetch manifest bl@^4.1.0
+1172 silly fetch manifest wcwidth@^1.0.1
+1173 http fetch GET 200 https://registry.npmjs.org/wcwidth 451ms (cache miss)
+1174 silly fetch manifest log-symbols@^4.1.0
+1175 http fetch GET 200 https://registry.npmjs.org/restore-cursor 460ms (cache miss)
+1176 silly fetch manifest cli-spinners@^2.5.0
+1177 http fetch GET 200 https://registry.npmjs.org/bl 713ms (cache miss)
+1178 silly fetch manifest is-interactive@^1.0.0
+1179 http fetch GET 200 https://registry.npmjs.org/log-symbols 392ms (cache miss)
+1180 silly fetch manifest is-unicode-supported@^0.1.0
+1181 http fetch GET 200 https://registry.npmjs.org/cli-spinners 565ms (cache miss)
+1182 silly fetch manifest tslib@^2.1.0
+1183 http fetch GET 200 https://registry.npmjs.org/is-interactive 407ms (cache miss)
+1184 http fetch GET 200 https://registry.npmjs.org/is-unicode-supported 378ms (cache miss)
+1185 silly placeDep node_modules/heroku restore-cursor@3.1.0 OK for: cli-cursor@3.1.0 want: ^3.1.0
+1186 silly fetch manifest signal-exit@^3.0.2
+1187 silly placeDep node_modules/heroku jsbn@1.1.0 OK for: ip-address@5.9.4 want: 1.1.0
+1188 silly placeDep node_modules/heroku sprintf-js@1.1.2 OK for: ip-address@5.9.4 want: 1.1.2
+1189 silly placeDep node_modules/heroku is-extglob@2.1.1 OK for: is-glob@4.0.3 want: ^2.1.1
+1190 silly placeDep node_modules/heroku is-docker@2.2.1 OK for: is-wsl@2.2.0 want: ^2.0.0
+1191 silly placeDep node_modules/heroku @isaacs/cliui@8.0.2 OK for: jackspeak@3.4.3 want: ^8.0.2
+1192 silly placeDep node_modules/heroku @pkgjs/parseargs@0.11.0 OK for: jackspeak@3.4.3 want: ^0.11.0
+1193 silly fetch manifest string-width@^5.1.2
+1194 silly fetch manifest string-width-cjs@npm:string-width@^4.2.0
+1195 silly fetch manifest strip-ansi@^7.0.1
+1196 silly fetch manifest strip-ansi-cjs@npm:strip-ansi@^6.0.1
+1197 silly fetch manifest wrap-ansi@^8.1.0
+1198 silly fetch manifest wrap-ansi-cjs@npm:wrap-ansi@^7.0.0
+1199 silly placeDep node_modules/heroku/node_modules/@isaacs/cliui string-width@5.1.2 OK for: @isaacs/cliui@8.0.2 want: ^5.1.2
+1200 silly placeDep node_modules/heroku string-width-cjs@4.2.3 OK for: @isaacs/cliui@8.0.2 want: npm:string-width@^4.2.0
+1201 silly placeDep node_modules/heroku/node_modules/@isaacs/cliui strip-ansi@7.1.0 OK for: @isaacs/cliui@8.0.2 want: ^7.0.1
+1202 silly placeDep node_modules/heroku strip-ansi-cjs@6.0.1 OK for: @isaacs/cliui@8.0.2 want: npm:strip-ansi@^6.0.1
+1203 silly placeDep node_modules/heroku/node_modules/@isaacs/cliui wrap-ansi@8.1.0 OK for: @isaacs/cliui@8.0.2 want: ^8.1.0
+1204 silly placeDep node_modules/heroku wrap-ansi-cjs@7.0.0 OK for: @isaacs/cliui@8.0.2 want: npm:wrap-ansi@^7.0.0
+1205 silly fetch manifest emoji-regex@^9.2.2
+1206 silly fetch manifest eastasianwidth@^0.2.0
+1207 silly fetch manifest ansi-regex@^6.0.1
+1208 silly fetch manifest ansi-styles@^6.1.0
+1209 http fetch GET 200 https://registry.npmjs.org/eastasianwidth 728ms (cache revalidated)
+1210 silly placeDep node_modules/heroku async@3.2.6 OK for: jake@10.9.2 want: ^3.2.3
+1211 silly placeDep node_modules/heroku/node_modules/jake chalk@4.1.2 OK for: jake@10.9.2 want: ^4.0.2
+1212 silly placeDep node_modules/heroku filelist@1.0.4 OK for: jake@10.9.2 want: ^1.0.4
+1213 silly placeDep node_modules/heroku/node_modules/jake minimatch@3.1.2 OK for: jake@10.9.2 want: ^3.1.2
+1214 silly fetch manifest minimatch@^5.0.1
+1215 silly fetch manifest brace-expansion@^1.1.7
+1216 silly placeDep node_modules/heroku/node_modules/filelist minimatch@5.1.6 OK for: filelist@1.0.4 want: ^5.0.1
+1217 silly placeDep node_modules/heroku argparse@1.0.10 OK for: js-yaml@3.14.1 want: ^1.0.7
+1218 silly placeDep node_modules/heroku esprima@4.0.1 OK for: js-yaml@3.14.1 want: ^4.0.0
+1219 silly fetch manifest sprintf-js@~1.0.2
+1220 silly placeDep node_modules/heroku/node_modules/argparse sprintf-js@1.0.3 OK for: argparse@1.0.10 want: ~1.0.2
+1221 silly placeDep node_modules/heroku json-buffer@3.0.1 OK for: keyv@4.5.4 want: 3.0.1
+1222 silly placeDep node_modules/heroku pify@4.0.1 OK for: load-json-file@5.3.0 want: ^4.0.1
+1223 silly placeDep node_modules/heroku strip-bom@3.0.0 OK for: load-json-file@5.3.0 want: ^3.0.0
+1224 silly placeDep node_modules/heroku type-fest@0.3.1 OK for: load-json-file@5.3.0 want: ^0.3.0
+1225 silly placeDep node_modules/heroku byline@5.0.0 OK for: log-chopper@1.0.2 want: 5.x
+1226 silly placeDep node_modules/heroku braces@3.0.3 OK for: micromatch@4.0.8 want: ^3.0.3
+1227 silly placeDep node_modules/heroku picomatch@2.3.1 OK for: micromatch@4.0.8 want: ^2.3.1
+1228 silly fetch manifest fill-range@^7.1.1
+1229 http fetch GET 200 https://registry.npmjs.org/fill-range 693ms (cache revalidated)
+1230 silly placeDep node_modules/heroku fill-range@7.1.1 OK for: braces@3.0.3 want: ^7.1.1
+1231 silly fetch manifest to-regex-range@^5.0.1
+1232 http fetch GET 200 https://registry.npmjs.org/to-regex-range 552ms (cache revalidated)
+1233 silly placeDep node_modules/heroku to-regex-range@5.0.1 OK for: fill-range@7.1.1 want: ^5.0.1
+1234 silly fetch manifest is-number@^7.0.0
+1235 http fetch GET 200 https://registry.npmjs.org/is-number 507ms (cache revalidated)
+1236 silly placeDep node_modules/heroku brace-expansion@2.0.1 OK for: minimatch@9.0.5 want: ^2.0.1
+1237 silly fetch manifest balanced-match@^1.0.0
+1238 http fetch GET 200 https://registry.npmjs.org/balanced-match 616ms (cache revalidated)
+1239 silly placeDep node_modules/heroku balanced-match@1.0.2 OK for: brace-expansion@2.0.1 want: ^1.0.0
+1240 silly placeDep node_modules/heroku/node_modules/netrc-parser debug@3.2.7 OK for: netrc-parser@3.1.6 want: ^3.1.0
+1241 silly placeDep node_modules/heroku/node_modules/netrc-parser execa@0.10.0 OK for: netrc-parser@3.1.6 want: ^0.10.0
+1242 silly placeDep node_modules/heroku whatwg-url@5.0.0 OK for: node-fetch@2.7.0 want: ^5.0.0
+1243 silly fetch manifest tr46@~0.0.3
+1244 silly fetch manifest webidl-conversions@^3.0.0
+1245 http fetch GET 200 https://registry.npmjs.org/webidl-conversions 438ms (cache revalidated)
+1246 http fetch GET 200 https://registry.npmjs.org/tr46 589ms (cache revalidated)
+1247 silly placeDep node_modules/heroku growly@1.3.0 OK for: node-notifier@8.0.2 want: ^1.3.0
+1248 silly placeDep node_modules/heroku shellwords@0.1.1 OK for: node-notifier@8.0.2 want: ^0.1.1
+1249 silly placeDep node_modules/heroku mimic-fn@2.1.0 OK for: onetime@5.1.2 want: ^2.1.0
+1250 silly placeDep node_modules/heroku define-lazy-prop@2.0.0 OK for: open@8.4.2 want: ^2.0.0
+1251 silly placeDep node_modules/heroku object-assign@4.1.1 OK for: opn@3.0.3 want: ^4.0.1
+1252 silly placeDep node_modules/heroku bl@4.1.0 OK for: ora@5.4.1 want: ^4.1.0
+1253 silly placeDep node_modules/heroku/node_modules/ora chalk@4.1.2 OK for: ora@5.4.1 want: ^4.1.0
+1254 silly placeDep node_modules/heroku cli-spinners@2.9.2 OK for: ora@5.4.1 want: ^2.5.0
+1255 silly placeDep node_modules/heroku is-interactive@1.0.0 OK for: ora@5.4.1 want: ^1.0.0
+1256 silly placeDep node_modules/heroku is-unicode-supported@0.1.0 OK for: ora@5.4.1 want: ^0.1.0
+1257 silly placeDep node_modules/heroku log-symbols@4.1.0 OK for: ora@5.4.1 want: ^4.1.0
+1258 silly placeDep node_modules/heroku wcwidth@1.0.1 OK for: ora@5.4.1 want: ^1.0.1
+1259 silly fetch manifest buffer@^5.5.0
+1260 silly fetch manifest inherits@^2.0.4
+1261 silly fetch manifest readable-stream@^3.4.0
+1262 http fetch GET 200 https://registry.npmjs.org/readable-stream 620ms (cache revalidated)
+1263 silly fetch manifest defaults@^1.0.3

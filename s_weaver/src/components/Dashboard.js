@@ -41,7 +41,7 @@ const Dashboard = () => {
    // Function to fetch featured stories from API
    const fetchFeaturedStories = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/stories'); // Replace with your API endpoint
+      const response = await axios.get('http://localhost:5000/api/stories'); 
       setFeaturedStories(response.data.slice(0, 10)); // Limit to first 10 stories
     } catch (error) {
       console.error("Error fetching featured stories:", error);
@@ -98,8 +98,8 @@ const Dashboard = () => {
       try {
         await axios.post('http://localhost:5000/api/stories/upload', formData, {
           headers: {
-            'Authorization': `Bearer ${token}`, // Fixed: Use backticks for template literals
-            //'Content-Type': 'multipart/form-data', // It's usually safe to let axios set this for you
+            'Authorization': `Bearer ${token}`, 
+            
           },
         });
 

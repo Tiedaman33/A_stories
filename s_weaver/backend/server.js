@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
-const authMiddleware = require('./middleware/auth'); // Correct the path and name
+const authMiddleware = require('./middleware/auth'); 
 const storyRoutes = require('./routes/storyRoutes');
 const bookRoutes = require('./routes/bookRoutes');
 
@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cors({
     origin: 'http://localhost:3000', // Allow your frontend's origin
     credentials: true, // Allow credentials to be sent
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific methods if needed
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allow headers such as Authorization and Content-Type
 }));
 

@@ -65,7 +65,7 @@ const authUser = async (req, res) => {
     const payload = {
       user: {
         id: user.id,
-         // Optionally include more user details here
+         
       },
     };
 
@@ -81,7 +81,7 @@ const authUser = async (req, res) => {
 // Controller to get user profile
 const getUserProfile = async (req, res) => {
   try {
-    // Assuming req.user is populated by the auth middleware
+    
     if (!req.user || !req.user.id) {
       return res.status(400).json({ message: 'User not authenticated' });
     }

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles.css';
 import { useNavigate } from 'react-router-dom';
-import StoryList from './StoryList'; // Adjust the path as needed
-import FeaturedStories from './FeaturedStories'; // Adjust the path as needed
+import StoryList from './StoryList'; 
+import FeaturedStories from './FeaturedStories'; 
 
 const Home = () => {
   const [user, setUser] = useState(null);
@@ -15,7 +15,7 @@ const Home = () => {
       const token = localStorage.getItem('token');
       if (token) {
         try {
-          const response = await fetch('http://localhost:5000/api/users/profile', { // Adjusted port to 5000
+          const response = await fetch('http://localhost:5000/api/users/profile', { 
             headers: { Authorization: `Bearer ${token}` },
           });
           if (response.ok) {
@@ -35,7 +35,7 @@ const Home = () => {
 
     const fetchStories = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/stories'); // Adjusted port to 5000
+        const response = await fetch('http://localhost:5000/api/stories'); 
         if (response.ok) {
           const data = await response.json();
           setStories(data); // Set the stories in the state
@@ -49,7 +49,7 @@ const Home = () => {
 
     const fetchFeaturedStories = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/stories/featured'); // Adjusted port to 5000
+        const response = await fetch('http://localhost:5000/api/stories/featured'); 
         if (response.ok) {
           const data = await response.json();
           setFeaturedStories(data); // Set the featured stories in the state
