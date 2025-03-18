@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setStories } from '../redux/storiesSlice';
@@ -24,54 +24,45 @@ const Dashboard = () => {
   const dispatch = useDispatch();
   const stories = useSelector((state) => state.stories.storiesList);
 
-  const fetchUserData = async () => {
+  const fetchUserData = useCallback(async () => {
     const token = localStorage.getItem('token');
+    if (!token) return;
+
     try {
-      const userResponse = await axios.get('http://localhost:5000/api/users/userprofile', {
+      const response = await axios.get('http://localhost:5000/api/users/userprofile', {
         headers: { Authorization: `Bearer ${token}` },
       });
-      setUserData(userResponse.data);
+      setUserData(response.data);
     } catch (err) {
       console.error('Failed to fetch user data:', err);
       setError('Failed to fetch user data.');
       localStorage.removeItem('token');
       navigate('/userprofile');
     }
-  };
-   // Function to fetch featured stories from API
-   const fetchFeaturedStories = async () => {
-    try {
-      const response = await axios.get('http://localhost:5000/api/stories'); 
-      setFeaturedStories(response.data.slice(0, 10)); // Limit to first 10 stories
-    } catch (error) {
-      console.error("Error fetching featured stories:", error);
-    }
-  };
+  }, [navigate]);
 
-  const fetchStories = async () => {
+  const fetchStories = useCallback(async () => {
     const token = localStorage.getItem('token');
     if (!token) return;
 
     try {
-      const storiesResponse = await axios.get('http://localhost:5000/api/stories', {
+      const response = await axios.get('http://localhost:5000/api/stories', {
         headers: { Authorization: `Bearer ${token}` },
       });
-      dispatch(setStories(storiesResponse.data));
-      console.log('Updated stories in Redux:', storiesResponse.data);
+      dispatch(setStories(response.data));
     } catch (err) {
       console.error('Failed to fetch stories:', err);
       setError('Failed to fetch stories.');
       localStorage.removeItem('token');
       navigate('/userprofile');
     }
-  };
+  }, [dispatch, navigate]);
 
-  const fetchData = async () => {
-    setLoading(true);
+  const fetchData = useCallback(async () => {
     await fetchUserData();
     await fetchStories();
     setLoading(false);
-  };
+  }, [fetchUserData, fetchStories]);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -82,11 +73,18 @@ const Dashboard = () => {
     }
 
     fetchData();
-  }, [dispatch, navigate]);
+  }, [fetchData, navigate]);
+
+  
 
   const handleUploadStory = async (e) => {
     e.preventDefault();
     const token = localStorage.getItem('token');
+
+    if (!token) {
+      setError('No token found. Please log in again.');
+      return;
+    }
 
     const formData = new FormData();
     formData.append('title', storyData.title);
@@ -94,48 +92,47 @@ const Dashboard = () => {
     formData.append('datePublished', storyData.datePublished);
     formData.append('storyFile', storyData.storyFile);
 
-    if (token) {
-      try {
-        await axios.post('http://localhost:5000/api/stories/upload', formData, {
-          headers: {
-            'Authorization': `Bearer ${token}`, 
-            
-          },
-        });
+    try {
+      await axios.post('http://localhost:5000/api/stories/upload', formData, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'multipart/form-data',
+        },
+      });
 
-        alert('Story uploaded successfully!');
-        setStoryData({
-          title: '',
-          genre: '',
-          datePublished: new Date().toISOString().split('T')[0],
-          storyFile: null,
-        });
-        if (fileInputRef.current) {
-          fileInputRef.current.value = null; // Reset the file input
-        }
-        fetchStories(); // Fetch stories after upload to refresh the list
-      } catch (err) {
-        console.error('Failed to upload story:', err);
-        setError('Failed to upload story.');
+      alert('Story uploaded successfully!');
+      //reset story data
+      setStoryData({
+        title: '',
+        genre: '',
+        datePublished: new Date().toISOString().split('T')[0],
+        storyFile: null,
+      });
+      //clear  the file input field
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
       }
-    } else {
-      setError('No token found. Please log in again.');
-    }
-};
 
+      fetchStories(); //refresh story list
+    } catch (err) {
+      console.error('Failed to upload story:', err);
+      setError('Failed to upload story.');
+    }
+  };
 
   const handleDeleteStory = async (storyId) => {
     const token = localStorage.getItem('token');
-    if (token) {
-      try {
-        await axios.delete(`http://localhost:5000/api/stories/${storyId}`, {
-          headers: { Authorization: `Bearer ${token}` },
-        });
-        dispatch(setStories(stories.filter((s) => s._id !== storyId)));
-      } catch (err) {
-        console.error('Failed to delete story:', err);
-        setError('Failed to delete story.');
-      }
+    if (!token) return;
+
+    try {
+      await axios.delete(`http://localhost:5000/api/stories/${storyId}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      dispatch(setStories((prevStories) => prevStories.filter((s) => s._id !== storyId)));
+    } catch (err) {
+      console.error('Failed to delete story:', err);
+      setError('Failed to delete story.');
     }
   };
 
@@ -159,16 +156,11 @@ const Dashboard = () => {
         ...prevData,
         storyFile: file,
       }));
-      console.log('File uploaded:', file);
     }
   };
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
-  };
-
-  const handleCardClick = (storyId) => {
-    navigate(`/stories/${storyId}`);
   };
 
   if (loading) {
@@ -179,11 +171,12 @@ const Dashboard = () => {
     return (
       <div className="error-container">
         <p>{error}</p>
-        <button onClick={() => navigate('/login')} className="btn">Go to Login</button>
+        <button onClick={() => navigate('/login')} className="btn">
+          Go to Login
+        </button>
       </div>
     );
   }
-
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white">
       <div className="container mx-auto max-w-6xl p-6">
